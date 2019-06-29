@@ -1,0 +1,27 @@
+---
+-
+  hosts: win1 lin1
+  gather_facts: true # this will make not to gather facts before running tasks
+
+  tasks: 
+    - name: Copy Files
+      win_copy:
+        content: "Welcome to {{ item }} ansible\n"
+        dest: c:\temp\test.txt
+      loop: # or you can use with_items:
+           - dinesh
+           - basant
+      when: ansible_distribution == "Microsoft Windows Server Datacenter"
+
+# you can also use
+# loop:
+#    - {name: 'Dinesh' , company: 'Generalmills'} You can call this by item.name and item.company 
+
+...
+
+
+# use same looping to stop the BITS and dhcp service
+
+
+
+

@@ -1,0 +1,17 @@
+---
+-
+  hosts: win1 lin1
+  tasks:
+    - name: test Jinja if
+      debug:
+        msg: >
+            This is test if ansible
+             {% for ipv4 in ansible_all_ipv4_addresses -%}
+                   IP Address entry {{ loop.index }} = {{ ipv4 }}
+             {% endfor -%}
+
+# you can try this for loop using range {% for number in range(1, 5) -%}
+# you can test if number if odd or enough {% if number is odd %}
+# {{ [1, 2, 3, 4, 5] | min }}
+
+# {{ [1, 1, 2, 2, 3, 3, 4, 4, 5, 5] | unique }}

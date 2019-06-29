@@ -1,0 +1,27 @@
+---
+-
+  hosts: win1 lin1
+  gather_facts: true # this will make not to gather facts before running tasks
+
+  tasks: 
+    - name: play1 - task1
+      debug:
+           msg: play1-task1
+
+    - include_tasks: play1-task2.yml
+    
+
+- import_playbook: play2.yml
+
+# you can also use
+# loop:
+#    - {name: 'Dinesh' , company: 'Generalmills'} You can call this by item.name and item.company 
+
+...
+
+
+# use same looping to stop the BITS and dhcp service
+
+
+
+

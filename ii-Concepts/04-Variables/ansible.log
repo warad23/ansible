@@ -1,0 +1,1093 @@
+2019-01-30 05:40:18,676 p=1766 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-30 05:40:18,693 p=1766 u=root |  TASK [Display Variable name] *******************************************************************************************************************************************
+2019-01-30 05:40:18,792 p=1766 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "Dinesh Patil"
+}
+2019-01-30 05:40:18,793 p=1766 u=root |  ok: [ubuntu] => {
+    "msg": "Dinesh Patil"
+}
+2019-01-30 05:40:18,797 p=1766 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-30 05:40:18,797 p=1766 u=root |  ansiblewinsrv              : ok=1    changed=0    unreachable=0    failed=0   
+2019-01-30 05:40:18,798 p=1766 u=root |  ubuntu                     : ok=1    changed=0    unreachable=0    failed=0   
+2019-01-30 05:44:54,124 p=1790 u=root |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to have been in '/home/dinesh/ansiclass/Concepts/Variables/display.yml': line 8, column 6, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    myname: "Dinesh Patil"
+     company: "Generalmills"
+     ^ here
+
+2019-01-30 05:47:28,297 p=1807 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-30 05:47:28,311 p=1807 u=root |  TASK [Display Variable name] *******************************************************************************************************************************************
+2019-01-30 05:47:28,395 p=1807 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-30 05:47:28,420 p=1807 u=root |  ok: [ubuntu] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-30 05:47:28,426 p=1807 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-30 05:47:28,427 p=1807 u=root |  ansiblewinsrv              : ok=1    changed=0    unreachable=0    failed=0   
+2019-01-30 05:47:28,427 p=1807 u=root |  ubuntu                     : ok=1    changed=0    unreachable=0    failed=0   
+2019-01-31 22:30:10,123 p=2015 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-31 22:30:10,156 p=2015 u=root |  TASK [Display Variable name] *******************************************************************************************************************************************
+2019-01-31 22:30:10,285 p=2015 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:30:10,312 p=2015 u=root |  ok: [ubuntu] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:30:10,327 p=2015 u=root |  TASK [display list items] **********************************************************************************************************************************************
+2019-01-31 22:30:10,443 p=2015 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:30:10,467 p=2015 u=root |  ok: [ubuntu] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:30:10,484 p=2015 u=root |  TASK [display array items] *********************************************************************************************************************************************
+2019-01-31 22:30:10,601 p=2015 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:30:10,624 p=2015 u=root |  ok: [ubuntu] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:30:10,641 p=2015 u=root |  TASK [display variables from external files] ***************************************************************************************************************************
+2019-01-31 22:30:10,752 p=2015 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:30:10,780 p=2015 u=root |  ok: [ubuntu] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:30:10,796 p=2015 u=root |  TASK [take input from user] ********************************************************************************************************************************************
+2019-01-31 22:30:10,915 p=2015 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "the input provided by you is WINLOGON\n"
+}
+2019-01-31 22:30:10,938 p=2015 u=root |  ok: [ubuntu] => {
+    "msg": "the input provided by you is WINLOGON\n"
+}
+2019-01-31 22:30:10,952 p=2015 u=root |  TASK [get the variables from fact] *************************************************************************************************************************************
+2019-01-31 22:30:11,015 p=2015 u=root |  fatal: [ansiblewinsrv]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'ansible_hostname' is undefined\n\nThe error appears to have been in '/home/dinesh/ansiclass/Concepts/Variables/display.yml': line 61, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: get the variables from fact\n      ^ here\n"}
+2019-01-31 22:30:11,037 p=2015 u=root |  fatal: [ubuntu]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'ansible_hostname' is undefined\n\nThe error appears to have been in '/home/dinesh/ansiclass/Concepts/Variables/display.yml': line 61, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: get the variables from fact\n      ^ here\n"}
+2019-01-31 22:30:11,040 p=2015 u=root |  	to retry, use: --limit @/home/dinesh/ansiclass/Concepts/Variables/display.retry
+
+2019-01-31 22:30:11,041 p=2015 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-31 22:30:11,041 p=2015 u=root |  ansiblewinsrv              : ok=5    changed=0    unreachable=0    failed=1   
+2019-01-31 22:30:11,042 p=2015 u=root |  ubuntu                     : ok=5    changed=0    unreachable=0    failed=1   
+2019-01-31 22:32:11,513 p=2048 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-31 22:32:11,534 p=2048 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-31 22:32:11,675 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-31 22:32:11,741 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:32:11,745 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-31 22:32:11,759 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:32:11,925 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-31 22:32:11,949 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-31 22:32:12,832 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-31 22:32:13,882 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-31 22:32:14,987 p=2048 u=root |  ok: [ubuntu]
+2019-01-31 22:32:20,929 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-31 22:32:20,939 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-31 22:32:20,960 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-31 22:32:20,974 p=2048 u=root |  ok: [ansiblewinsrv]
+2019-01-31 22:32:20,997 p=2048 u=root |  TASK [Display Variable name] *******************************************************************************************************************************************
+2019-01-31 22:32:21,112 p=2048 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:32:21,251 p=2048 u=root |  ok: [ubuntu] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:32:21,273 p=2048 u=root |  TASK [display list items] **********************************************************************************************************************************************
+2019-01-31 22:32:21,393 p=2048 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:32:21,528 p=2048 u=root |  ok: [ubuntu] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:32:21,548 p=2048 u=root |  TASK [display array items] *********************************************************************************************************************************************
+2019-01-31 22:32:21,740 p=2048 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:32:21,815 p=2048 u=root |  ok: [ubuntu] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:32:21,834 p=2048 u=root |  TASK [display variables from external files] ***************************************************************************************************************************
+2019-01-31 22:32:22,023 p=2048 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:32:22,092 p=2048 u=root |  ok: [ubuntu] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:32:22,112 p=2048 u=root |  TASK [take input from user] ********************************************************************************************************************************************
+2019-01-31 22:32:22,298 p=2048 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "the input provided by you is WIN\n"
+}
+2019-01-31 22:32:22,368 p=2048 u=root |  ok: [ubuntu] => {
+    "msg": "the input provided by you is WIN\n"
+}
+2019-01-31 22:32:22,387 p=2048 u=root |  TASK [get the variables from fact] *************************************************************************************************************************************
+2019-01-31 22:32:22,466 p=2048 u=root |  fatal: [ansiblewinsrv]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: u\"hostvars['ANSIBLEWINSRV']\" is undefined\n\nThe error appears to have been in '/home/dinesh/ansiclass/Concepts/Variables/display.yml': line 61, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: get the variables from fact\n      ^ here\n"}
+2019-01-31 22:32:22,578 p=2048 u=root |  fatal: [ubuntu]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'ansible.vars.hostvars.HostVarsVars object' has no attribute 'ansible_port'\n\nThe error appears to have been in '/home/dinesh/ansiclass/Concepts/Variables/display.yml': line 61, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: get the variables from fact\n      ^ here\n"}
+2019-01-31 22:32:22,582 p=2048 u=root |  	to retry, use: --limit @/home/dinesh/ansiclass/Concepts/Variables/display.retry
+
+2019-01-31 22:32:22,582 p=2048 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-31 22:32:22,583 p=2048 u=root |  ansiblewinsrv              : ok=6    changed=0    unreachable=0    failed=1   
+2019-01-31 22:32:22,583 p=2048 u=root |  ubuntu                     : ok=6    changed=0    unreachable=0    failed=1   
+2019-01-31 22:33:23,056 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-31 22:33:23,074 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:33:23,079 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-31 22:33:23,094 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:33:23,221 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-31 22:33:23,239 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-31 22:33:24,064 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-31 22:33:25,032 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-31 22:33:31,117 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-31 22:33:31,127 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-31 22:33:31,148 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-31 22:33:31,166 p=2157 u=root |  ansiblewinsrv | SUCCESS => {
+    "ansible_facts": {
+        "ansible_architecture": "64-bit", 
+        "ansible_bios_date": "10/27/2017", 
+        "ansible_bios_version": "VMW71.00V.6997262.B64.1710270607", 
+        "ansible_date_time": {
+            "date": "2019-02-01", 
+            "day": "01", 
+            "epoch": "1549022606.70994", 
+            "hour": "12", 
+            "iso8601": "2019-02-01T06:33:26Z", 
+            "iso8601_basic": "20190201T120326709937", 
+            "iso8601_basic_short": "20190201T120326", 
+            "iso8601_micro": "2019-02-01T06:33:26.709937Z", 
+            "minute": "03", 
+            "month": "02", 
+            "second": "26", 
+            "time": "12:03:26", 
+            "tz": "India Standard Time", 
+            "tz_offset": "+05:30", 
+            "weekday": "Friday", 
+            "weekday_number": "5", 
+            "weeknumber": "4", 
+            "year": "2019"
+        }, 
+        "ansible_distribution": "Microsoft Windows Server Datacenter", 
+        "ansible_distribution_major_version": "10", 
+        "ansible_distribution_version": "10.0.17134.0", 
+        "ansible_domain": "", 
+        "ansible_env": {
+            "ALLUSERSPROFILE": "C:\\ProgramData", 
+            "APPDATA": "C:\\Users\\dinesh\\AppData\\Roaming", 
+            "COMPUTERNAME": "ANSIBLEWINSRV", 
+            "ComSpec": "C:\\Windows\\system32\\cmd.exe", 
+            "CommonProgramFiles": "C:\\Program Files\\Common Files", 
+            "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files", 
+            "CommonProgramW6432": "C:\\Program Files\\Common Files", 
+            "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData", 
+            "HOMEDRIVE": "C:", 
+            "HOMEPATH": "\\Users\\dinesh", 
+            "LOCALAPPDATA": "C:\\Users\\dinesh\\AppData\\Local", 
+            "LOGONSERVER": "\\\\ANSIBLEWINSRV", 
+            "NUMBER_OF_PROCESSORS": "2", 
+            "OS": "Windows_NT", 
+            "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL", 
+            "PROCESSOR_ARCHITECTURE": "AMD64", 
+            "PROCESSOR_IDENTIFIER": "AMD64 Family 21 Model 16 Stepping 1, AuthenticAMD", 
+            "PROCESSOR_LEVEL": "21", 
+            "PROCESSOR_REVISION": "1001", 
+            "PROMPT": "$P$G", 
+            "PSExecutionPolicyPreference": "Unrestricted", 
+            "PSModulePath": "C:\\Users\\dinesh\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules", 
+            "PUBLIC": "C:\\Users\\Public", 
+            "Path": "C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Users\\dinesh\\AppData\\Local\\Microsoft\\WindowsApps", 
+            "ProgramData": "C:\\ProgramData", 
+            "ProgramFiles": "C:\\Program Files", 
+            "ProgramFiles(x86)": "C:\\Program Files (x86)", 
+            "ProgramW6432": "C:\\Program Files", 
+            "SystemDrive": "C:", 
+            "SystemRoot": "C:\\Windows", 
+            "TEMP": "C:\\Users\\dinesh\\AppData\\Local\\Temp", 
+            "TMP": "C:\\Users\\dinesh\\AppData\\Local\\Temp", 
+            "USERDOMAIN": "ANSIBLEWINSRV", 
+            "USERDOMAIN_ROAMINGPROFILE": "ANSIBLEWINSRV", 
+            "USERNAME": "dinesh", 
+            "USERPROFILE": "C:\\Users\\dinesh", 
+            "windir": "C:\\Windows"
+        }, 
+        "ansible_fqdn": "ansiblewinsrv.", 
+        "ansible_hostname": "ANSIBLEWINSRV", 
+        "ansible_interfaces": [
+            {
+                "connection_name": "Ethernet0", 
+                "default_gateway": "192.168.2.1", 
+                "dns_domain": "Belkin", 
+                "interface_index": 6, 
+                "interface_name": "Intel(R) 82574L Gigabit Network Connection", 
+                "macaddress": "00:0C:29:26:3A:3B"
+            }
+        ], 
+        "ansible_ip_addresses": [
+            "192.168.2.110", 
+            "fe80::a909:568d:4cd5:d19e"
+        ], 
+        "ansible_kernel": "10.0.17134.0", 
+        "ansible_lastboot": "2019-01-30 16:53:56Z", 
+        "ansible_machine_id": "S-1-5-21-229082103-2515665913-731631038", 
+        "ansible_memtotal_mb": 8191, 
+        "ansible_nodename": "ansiblewinsrv.", 
+        "ansible_os_family": "Windows", 
+        "ansible_os_name": "Microsoft Windows Server Datacenter", 
+        "ansible_os_product_type": "server", 
+        "ansible_owner_contact": "", 
+        "ansible_owner_name": "Windows User", 
+        "ansible_powershell_version": 5, 
+        "ansible_processor": [], 
+        "ansible_processor_cores": 1, 
+        "ansible_processor_count": 2, 
+        "ansible_processor_threads_per_core": 0.5, 
+        "ansible_processor_vcpus": 0.5, 
+        "ansible_product_name": "VMware7,1", 
+        "ansible_product_serial": "VMware-56 4d db 33 4b c6 e2 de-66 69 a4 d3 35 26 3a 3b", 
+        "ansible_reboot_pending": false, 
+        "ansible_swaptotal_mb": 0, 
+        "ansible_system": "Win32NT", 
+        "ansible_system_description": "", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_uptime_seconds": 155374, 
+        "ansible_user_dir": "C:\\Users\\dinesh", 
+        "ansible_user_gecos": "", 
+        "ansible_user_id": "dinesh", 
+        "ansible_user_sid": "S-1-5-21-229082103-2515665913-731631038-1000", 
+        "ansible_win_rm_certificate_expires": "2020-01-29 16:51:43", 
+        "ansible_windows_domain": "WORKGROUP", 
+        "ansible_windows_domain_member": false, 
+        "ansible_windows_domain_role": "Stand-alone server", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2019-01-31 22:34:57,092 p=2170 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-31 22:34:57,125 p=2170 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-31 22:34:57,310 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-31 22:34:57,329 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:34:57,334 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-31 22:34:57,348 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:34:57,489 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-31 22:34:57,512 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-31 22:34:58,305 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-31 22:34:59,075 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-31 22:35:00,670 p=2170 u=root |  ok: [ubuntu]
+2019-01-31 22:35:05,412 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-31 22:35:05,422 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-31 22:35:05,443 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-31 22:35:05,454 p=2170 u=root |  ok: [ansiblewinsrv]
+2019-01-31 22:35:05,479 p=2170 u=root |  TASK [Display Variable name] *******************************************************************************************************************************************
+2019-01-31 22:35:05,598 p=2170 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:35:05,664 p=2170 u=root |  ok: [ubuntu] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:35:05,684 p=2170 u=root |  TASK [display list items] **********************************************************************************************************************************************
+2019-01-31 22:35:05,788 p=2170 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:35:05,858 p=2170 u=root |  ok: [ubuntu] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:35:05,880 p=2170 u=root |  TASK [display array items] *********************************************************************************************************************************************
+2019-01-31 22:35:05,995 p=2170 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:35:06,060 p=2170 u=root |  ok: [ubuntu] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:35:06,081 p=2170 u=root |  TASK [display variables from external files] ***************************************************************************************************************************
+2019-01-31 22:35:06,187 p=2170 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:35:06,259 p=2170 u=root |  ok: [ubuntu] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:35:06,279 p=2170 u=root |  TASK [take input from user] ********************************************************************************************************************************************
+2019-01-31 22:35:06,395 p=2170 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "the input provided by you is WINDIN\n"
+}
+2019-01-31 22:35:06,530 p=2170 u=root |  ok: [ubuntu] => {
+    "msg": "the input provided by you is WINDIN\n"
+}
+2019-01-31 22:35:06,551 p=2170 u=root |  TASK [get the variables from fact] *************************************************************************************************************************************
+2019-01-31 22:35:06,628 p=2170 u=root |  fatal: [ansiblewinsrv]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: u\"hostvars['ANSIBLEWINSRV']\" is undefined\n\nThe error appears to have been in '/home/dinesh/ansiclass/Concepts/Variables/display.yml': line 61, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: get the variables from fact\n      ^ here\n"}
+2019-01-31 22:35:06,872 p=2170 u=root |  ok: [ubuntu] => {
+    "msg": "The port used for the Debian\n # you can use below msg if any of the value not found or not assigned\n # The port used for the 5985\n \n"
+}
+2019-01-31 22:35:06,877 p=2170 u=root |  	to retry, use: --limit @/home/dinesh/ansiclass/Concepts/Variables/display.retry
+
+2019-01-31 22:35:06,878 p=2170 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-31 22:35:06,879 p=2170 u=root |  ansiblewinsrv              : ok=6    changed=0    unreachable=0    failed=1   
+2019-01-31 22:35:06,879 p=2170 u=root |  ubuntu                     : ok=7    changed=0    unreachable=0    failed=0   
+2019-01-31 22:43:52,529 p=2341 u=root |  ubuntu | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "192.168.2.102"
+        ], 
+        "ansible_all_ipv6_addresses": [
+            "fe80::20c:29ff:feef:e8d5"
+        ], 
+        "ansible_apparmor": {
+            "status": "enabled"
+        }, 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "05/19/2017", 
+        "ansible_bios_version": "6.00", 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-4.4.0-131-generic", 
+            "find_preseed": "/preseed.cfg", 
+            "noprompt": true, 
+            "quiet": true, 
+            "ro": true, 
+            "root": "UUID=096bb266-38ee-421e-89b1-8bf4717abf69"
+        }, 
+        "ansible_date_time": {
+            "date": "2019-01-31", 
+            "day": "31", 
+            "epoch": "1549003432", 
+            "hour": "22", 
+            "iso8601": "2019-02-01T06:43:52Z", 
+            "iso8601_basic": "20190131T224352253770", 
+            "iso8601_basic_short": "20190131T224352", 
+            "iso8601_micro": "2019-02-01T06:43:52.253957Z", 
+            "minute": "43", 
+            "month": "01", 
+            "second": "52", 
+            "time": "22:43:52", 
+            "tz": "PST", 
+            "tz_offset": "-0800", 
+            "weekday": "Thursday", 
+            "weekday_number": "4", 
+            "weeknumber": "04", 
+            "year": "2019"
+        }, 
+        "ansible_default_ipv4": {
+            "address": "192.168.2.102", 
+            "alias": "ens33", 
+            "broadcast": "192.168.2.255", 
+            "gateway": "192.168.2.1", 
+            "interface": "ens33", 
+            "macaddress": "00:0c:29:ef:e8:d5", 
+            "mtu": 1500, 
+            "netmask": "255.255.255.0", 
+            "network": "192.168.2.0", 
+            "type": "ether"
+        }, 
+        "ansible_default_ipv6": {}, 
+        "ansible_device_links": {
+            "ids": {
+                "sr0": [
+                    "ata-VMware_Virtual_SATA_CDRW_Drive_01000000000000000001"
+                ]
+            }, 
+            "labels": {}, 
+            "masters": {}, 
+            "uuids": {
+                "sda1": [
+                    "096bb266-38ee-421e-89b1-8bf4717abf69"
+                ], 
+                "sda5": [
+                    "878604c3-025d-4718-852a-77b280efd0bf"
+                ]
+            }
+        }, 
+        "ansible_devices": {
+            "loop0": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop1": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop2": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop3": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop4": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop5": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop6": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop7": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "sda": {
+                "holders": [], 
+                "host": "SCSI storage controller: LSI Logic / Symbios Logic 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI (rev 01)", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware Virtual S", 
+                "partitions": {
+                    "sda1": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": [
+                                "096bb266-38ee-421e-89b1-8bf4717abf69"
+                            ]
+                        }, 
+                        "sectors": "60911616", 
+                        "sectorsize": 512, 
+                        "size": "29.04 GB", 
+                        "start": "2048", 
+                        "uuid": "096bb266-38ee-421e-89b1-8bf4717abf69"
+                    }, 
+                    "sda2": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "2", 
+                        "sectorsize": 512, 
+                        "size": "1.00 KB", 
+                        "start": "60915710", 
+                        "uuid": null
+                    }, 
+                    "sda5": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": [
+                                "878604c3-025d-4718-852a-77b280efd0bf"
+                            ]
+                        }, 
+                        "sectors": "1996800", 
+                        "sectorsize": 512, 
+                        "size": "975.00 MB", 
+                        "start": "60915712", 
+                        "uuid": "878604c3-025d-4718-852a-77b280efd0bf"
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "62914560", 
+                "sectorsize": "512", 
+                "size": "30.00 GB", 
+                "support_discard": "0", 
+                "vendor": "VMware,", 
+                "virtual": 1
+            }, 
+            "sr0": {
+                "holders": [], 
+                "host": "SATA controller: VMware SATA AHCI controller", 
+                "links": {
+                    "ids": [
+                        "ata-VMware_Virtual_SATA_CDRW_Drive_01000000000000000001"
+                    ], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware SATA CD01", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "2097151", 
+                "sectorsize": "512", 
+                "size": "1024.00 MB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }
+        }, 
+        "ansible_distribution": "Ubuntu", 
+        "ansible_distribution_file_parsed": true, 
+        "ansible_distribution_file_path": "/etc/os-release", 
+        "ansible_distribution_file_variety": "Debian", 
+        "ansible_distribution_major_version": "16", 
+        "ansible_distribution_release": "xenial", 
+        "ansible_distribution_version": "16.04", 
+        "ansible_dns": {
+            "nameservers": [
+                "192.168.2.1"
+            ], 
+            "search": [
+                "Belkin"
+            ]
+        }, 
+        "ansible_domain": "", 
+        "ansible_effective_group_id": 1000, 
+        "ansible_effective_user_id": 1000, 
+        "ansible_ens33": {
+            "active": true, 
+            "device": "ens33", 
+            "ipv4": {
+                "address": "192.168.2.102", 
+                "broadcast": "192.168.2.255", 
+                "netmask": "255.255.255.0", 
+                "network": "192.168.2.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "fe80::20c:29ff:feef:e8d5", 
+                    "prefix": "64", 
+                    "scope": "link"
+                }
+            ], 
+            "macaddress": "00:0c:29:ef:e8:d5", 
+            "module": "e1000", 
+            "mtu": 1500, 
+            "pciid": "0000:02:01.0", 
+            "promisc": false, 
+            "speed": 1000, 
+            "type": "ether"
+        }, 
+        "ansible_env": {
+            "HOME": "/home/dinesh", 
+            "LANG": "en_US.UTF-8", 
+            "LANGUAGE": "en_US:", 
+            "LOGNAME": "dinesh", 
+            "MAIL": "/var/mail/dinesh", 
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games", 
+            "PWD": "/home/dinesh", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "1", 
+            "SSH_CLIENT": "127.0.0.1 59698 22", 
+            "SSH_CONNECTION": "127.0.0.1 59698 127.0.1.1 22", 
+            "SSH_TTY": "/dev/pts/3", 
+            "TERM": "xterm", 
+            "USER": "dinesh", 
+            "XDG_RUNTIME_DIR": "/run/user/1000", 
+            "XDG_SESSION_ID": "14", 
+            "_": "/bin/sh"
+        }, 
+        "ansible_fips": false, 
+        "ansible_form_factor": "Other", 
+        "ansible_fqdn": "ubuntu", 
+        "ansible_hostname": "ubuntu", 
+        "ansible_interfaces": [
+            "lo", 
+            "ens33"
+        ], 
+        "ansible_is_chroot": false, 
+        "ansible_iscsi_iqn": "", 
+        "ansible_kernel": "4.4.0-131-generic", 
+        "ansible_lo": {
+            "active": true, 
+            "device": "lo", 
+            "ipv4": {
+                "address": "127.0.0.1", 
+                "broadcast": "host", 
+                "netmask": "255.0.0.0", 
+                "network": "127.0.0.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "::1", 
+                    "prefix": "128", 
+                    "scope": "host"
+                }
+            ], 
+            "mtu": 65536, 
+            "promisc": false, 
+            "type": "loopback"
+        }, 
+        "ansible_local": {}, 
+        "ansible_lsb": {
+            "codename": "xenial", 
+            "description": "Ubuntu 16.04.5 LTS", 
+            "id": "Ubuntu", 
+            "major_release": "16", 
+            "release": "16.04"
+        }, 
+        "ansible_machine": "x86_64", 
+        "ansible_machine_id": "7cf64e5d4e96a581cd3b10f95c40a871", 
+        "ansible_memfree_mb": 1580, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 1760, 
+                "used": 222
+            }, 
+            "real": {
+                "free": 1580, 
+                "total": 1982, 
+                "used": 402
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 974, 
+                "total": 974, 
+                "used": 0
+            }
+        }, 
+        "ansible_memtotal_mb": 1982, 
+        "ansible_mounts": [
+            {
+                "block_available": 6574181, 
+                "block_size": 4096, 
+                "block_total": 7461622, 
+                "block_used": 887441, 
+                "device": "/dev/sda1", 
+                "fstype": "ext4", 
+                "inode_available": 1808530, 
+                "inode_total": 1905008, 
+                "inode_used": 96478, 
+                "mount": "/", 
+                "options": "rw,relatime,errors=remount-ro,data=ordered", 
+                "size_available": 26927845376, 
+                "size_total": 30562803712, 
+                "uuid": "096bb266-38ee-421e-89b1-8bf4717abf69"
+            }
+        ], 
+        "ansible_nodename": "ubuntu", 
+        "ansible_os_family": "Debian", 
+        "ansible_pkg_mgr": "apt", 
+        "ansible_processor": [
+            "0", 
+            "AuthenticAMD", 
+            "AMD A8-4500M APU with Radeon(tm) HD Graphics", 
+            "1", 
+            "AuthenticAMD", 
+            "AMD A8-4500M APU with Radeon(tm) HD Graphics", 
+            "2", 
+            "AuthenticAMD", 
+            "AMD A8-4500M APU with Radeon(tm) HD Graphics", 
+            "3", 
+            "AuthenticAMD", 
+            "AMD A8-4500M APU with Radeon(tm) HD Graphics"
+        ], 
+        "ansible_processor_cores": 2, 
+        "ansible_processor_count": 2, 
+        "ansible_processor_threads_per_core": 1, 
+        "ansible_processor_vcpus": 4, 
+        "ansible_product_name": "VMware Virtual Platform", 
+        "ansible_product_serial": "NA", 
+        "ansible_product_uuid": "NA", 
+        "ansible_product_version": "None", 
+        "ansible_python": {
+            "executable": "/usr/bin/python", 
+            "has_sslcontext": true, 
+            "type": "CPython", 
+            "version": {
+                "major": 2, 
+                "micro": 12, 
+                "minor": 7, 
+                "releaselevel": "final", 
+                "serial": 0
+            }, 
+            "version_info": [
+                2, 
+                7, 
+                12, 
+                "final", 
+                0
+            ]
+        }, 
+        "ansible_python_version": "2.7.12", 
+        "ansible_real_group_id": 1000, 
+        "ansible_real_user_id": 1000, 
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        }, 
+        "ansible_selinux_python_present": false, 
+        "ansible_service_mgr": "systemd", 
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAOsVnpeFQcRDBEepgEQrEr9AeGWSbRoOyge99uVS7MihiOCC3KdHhiA59KzCDU/U9oEDSNapz87QhScwLM2/0Q3K6LTXtmvzWyMvRVzuMK+pZgOtboTp09wN4lShoNn9z7FwCaBvPxlGAcUzAw609kyBBushEnLGOV0AhAxvAdWjAAAAFQCJAa0rjGKGUsqsJ1WP2FNQMSZkzwAAAIBQUSFocvYt8QYAktUAs5c7SG2y/IRw5ZbRv8XLRfYDCX8StS4SfSVCaeYjtBObsZh6Ualy5S5GfgoJvyVCN98aRErEhIKiJ3Mw2u5TTYKz2EBJwwgxftYLNH5Rd1KKcUma54uWQytljW2Uq5Gdx4KU6DArN3gl8QvT738vu+BCNgAAAIEAslKeOY81tNZa8DJu7GDVXxWD7aonfu26Zjs22sI5lW6MJe9iC+LYuOvfwhBnWKR0UBt8l8LW20gi+7PvFb/m3AnOb1MAzaIvgd8qulxZyp67ayIs3KPSfYXsq5oljxntsEztV1Xnfs3xz9EISRV+e+Tkby64nzc1LqETlQHoXD8=", 
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGa2X3t3Atx9EXR5Cs3FGkqda/FamGU04GCgodFk4i3eFRC8MJpe8IpPhgfvhPVEnUW8+OmEZdNaWCrnFYbakZM=", 
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIKFsDIn4i17XwuWwwJceq02JloeQHmZds2mRDCT30UUV", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCd975pQgPMFBU9zhwLgVzoBnfQ/Yfd96yYp61GoTtUbc08VREbYoX28iMe2+snYhrg+iDQS5r3elfIZt0QNHBDWrQKdQREix5MIt5Jc7SjrLQyoT4Dnh7WGOyNHU8Qv56KJc7xObkC+XgOhi1zGxJb9yD6+PkZ6smUis2ghqky7LhB5uM8pWm+CBX4gvNwZZFnJ+8uplswJyxEDP6tkqvbvTBp8K2nDF/YoTfU/4cYzeva2vI8MzYWXhh5zCpJeswzanx0wUYOTYOQZTcnAJs4mml+CviA19aclSl3UV9hs0MTSVSYx4HVkIF36nhXKuFcuIlbIOr/dXDKynHg3VyN", 
+        "ansible_swapfree_mb": 974, 
+        "ansible_swaptotal_mb": 974, 
+        "ansible_system": "Linux", 
+        "ansible_system_capabilities": [
+            ""
+        ], 
+        "ansible_system_capabilities_enforced": "True", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_uptime_seconds": 11295, 
+        "ansible_user_dir": "/home/dinesh", 
+        "ansible_user_gecos": "ansiblecontrolserver,,,", 
+        "ansible_user_gid": 1000, 
+        "ansible_user_id": "dinesh", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 1000, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "VMware", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2019-01-31 22:52:44,750 p=2435 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-31 22:52:44,778 p=2435 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-31 22:52:48,062 p=2435 u=root |  ok: [ubuntu]
+2019-01-31 22:52:48,111 p=2435 u=root |  TASK [Display Variable name] *******************************************************************************************************************************************
+2019-01-31 22:52:48,220 p=2435 u=root |  ok: [ubuntu] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:52:48,270 p=2435 u=root |  TASK [display list items] **********************************************************************************************************************************************
+2019-01-31 22:52:48,382 p=2435 u=root |  ok: [ubuntu] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:52:48,430 p=2435 u=root |  TASK [display array items] *********************************************************************************************************************************************
+2019-01-31 22:52:48,536 p=2435 u=root |  ok: [ubuntu] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:52:48,585 p=2435 u=root |  TASK [display variables from external files] ***************************************************************************************************************************
+2019-01-31 22:52:48,695 p=2435 u=root |  ok: [ubuntu] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:52:48,747 p=2435 u=root |  TASK [take input from user] ********************************************************************************************************************************************
+2019-01-31 22:52:48,858 p=2435 u=root |  ok: [ubuntu] => {
+    "msg": "the input provided by you is WIN\n"
+}
+2019-01-31 22:52:48,906 p=2435 u=root |  TASK [get the variables from fact] *************************************************************************************************************************************
+2019-01-31 22:52:49,097 p=2435 u=root |  ok: [ubuntu] => {
+    "msg": "The port used for the Debian\n # you can use below msg if any of the value not found or not assigned\n # The port used for the 5985\n \n"
+}
+2019-01-31 22:52:49,102 p=2435 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-31 22:52:49,102 p=2435 u=root |  ubuntu                     : ok=7    changed=0    unreachable=0    failed=0   
+2019-01-31 22:56:22,323 p=2544 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-31 22:56:22,339 p=2544 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-31 22:56:22,430 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-31 22:56:22,444 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:56:22,448 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-31 22:56:22,459 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:56:22,565 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-31 22:56:22,579 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-31 22:56:23,153 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-31 22:56:23,872 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-31 22:56:28,816 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-31 22:56:28,823 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-31 22:56:28,838 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-31 22:56:28,852 p=2544 u=root |  ok: [ansiblewinsrv]
+2019-01-31 22:56:28,869 p=2544 u=root |  TASK [Display Variable name] *******************************************************************************************************************************************
+2019-01-31 22:56:28,954 p=2544 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:56:28,968 p=2544 u=root |  TASK [display list items] **********************************************************************************************************************************************
+2019-01-31 22:56:29,050 p=2544 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:56:29,066 p=2544 u=root |  TASK [display array items] *********************************************************************************************************************************************
+2019-01-31 22:56:29,150 p=2544 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:56:29,165 p=2544 u=root |  TASK [display variables from external files] ***************************************************************************************************************************
+2019-01-31 22:56:29,252 p=2544 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:56:29,278 p=2544 u=root |  TASK [take input from user] ********************************************************************************************************************************************
+2019-01-31 22:56:29,359 p=2544 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "the input provided by you is WIN\n"
+}
+2019-01-31 22:56:29,375 p=2544 u=root |  TASK [get the variables from fact] *************************************************************************************************************************************
+2019-01-31 22:56:29,409 p=2544 u=root |  fatal: [ansiblewinsrv]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: u\"hostvars['ANSIBLEWINSRV']\" is undefined\n\nThe error appears to have been in '/home/dinesh/ansiclass/Concepts/Variables/display.yml': line 61, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: get the variables from fact\n      ^ here\n"}
+2019-01-31 22:56:29,413 p=2544 u=root |  	to retry, use: --limit @/home/dinesh/ansiclass/Concepts/Variables/display.retry
+
+2019-01-31 22:56:29,414 p=2544 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-31 22:56:29,414 p=2544 u=root |  ansiblewinsrv              : ok=6    changed=0    unreachable=0    failed=1   
+2019-01-31 22:57:14,822 p=2567 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-31 22:57:14,839 p=2567 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-31 22:57:14,940 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-31 22:57:14,952 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:57:14,955 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-31 22:57:14,966 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:57:15,062 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-31 22:57:15,077 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-31 22:57:15,645 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-31 22:57:16,350 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-31 22:57:20,869 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-31 22:57:20,876 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-31 22:57:20,892 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-31 22:57:20,910 p=2567 u=root |  ok: [ansiblewinsrv]
+2019-01-31 22:57:20,928 p=2567 u=root |  TASK [Display Variable name] *******************************************************************************************************************************************
+2019-01-31 22:57:21,019 p=2567 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:57:21,035 p=2567 u=root |  TASK [display list items] **********************************************************************************************************************************************
+2019-01-31 22:57:21,120 p=2567 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:57:21,136 p=2567 u=root |  TASK [display array items] *********************************************************************************************************************************************
+2019-01-31 22:57:21,218 p=2567 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:57:21,233 p=2567 u=root |  TASK [display variables from external files] ***************************************************************************************************************************
+2019-01-31 22:57:21,314 p=2567 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:57:21,328 p=2567 u=root |  TASK [take input from user] ********************************************************************************************************************************************
+2019-01-31 22:57:21,411 p=2567 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "the input provided by you is s\n"
+}
+2019-01-31 22:57:21,427 p=2567 u=root |  TASK [get the variables from fact] *************************************************************************************************************************************
+2019-01-31 22:57:21,465 p=2567 u=root |  fatal: [ansiblewinsrv]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: u\"hostvars['ANSIBLEWINSRV']\" is undefined\n\nThe error appears to have been in '/home/dinesh/ansiclass/Concepts/Variables/display.yml': line 61, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: get the variables from fact\n      ^ here\n"}
+2019-01-31 22:57:21,468 p=2567 u=root |  	to retry, use: --limit @/home/dinesh/ansiclass/Concepts/Variables/display.retry
+
+2019-01-31 22:57:21,469 p=2567 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-31 22:57:21,470 p=2567 u=root |  ansiblewinsrv              : ok=6    changed=0    unreachable=0    failed=1   
+2019-01-31 22:57:45,612 p=2590 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-31 22:57:45,627 p=2590 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-31 22:57:45,722 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-31 22:57:45,734 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:57:45,738 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-31 22:57:45,749 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:57:45,841 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-31 22:57:45,857 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-31 22:57:46,406 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-31 22:57:47,086 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-31 22:57:51,607 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-31 22:57:51,614 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-31 22:57:51,630 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-31 22:57:51,647 p=2590 u=root |  ok: [ansiblewinsrv]
+2019-01-31 22:57:51,667 p=2590 u=root |  TASK [Display Variable name] *******************************************************************************************************************************************
+2019-01-31 22:57:51,752 p=2590 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:57:51,767 p=2590 u=root |  TASK [display list items] **********************************************************************************************************************************************
+2019-01-31 22:57:51,852 p=2590 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:57:51,866 p=2590 u=root |  TASK [display array items] *********************************************************************************************************************************************
+2019-01-31 22:57:51,948 p=2590 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:57:51,964 p=2590 u=root |  TASK [display variables from external files] ***************************************************************************************************************************
+2019-01-31 22:57:52,046 p=2590 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:57:52,062 p=2590 u=root |  TASK [take input from user] ********************************************************************************************************************************************
+2019-01-31 22:57:52,147 p=2590 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "the input provided by you is dsa\u001b[A\n"
+}
+2019-01-31 22:57:52,163 p=2590 u=root |  TASK [get the variables from fact] *************************************************************************************************************************************
+2019-01-31 22:57:52,201 p=2590 u=root |  fatal: [ansiblewinsrv]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: u\"hostvars['ANSIBLEWINSRV']\" is undefined\n\nThe error appears to have been in '/home/dinesh/ansiclass/Concepts/Variables/display.yml': line 61, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: get the variables from fact\n      ^ here\n"}
+2019-01-31 22:57:52,204 p=2590 u=root |  	to retry, use: --limit @/home/dinesh/ansiclass/Concepts/Variables/display.retry
+
+2019-01-31 22:57:52,205 p=2590 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-31 22:57:52,205 p=2590 u=root |  ansiblewinsrv              : ok=6    changed=0    unreachable=0    failed=1   
+2019-01-31 22:59:05,749 p=2613 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-31 22:59:05,765 p=2613 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-31 22:59:05,859 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-31 22:59:05,872 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:59:05,875 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-31 22:59:05,885 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-31 22:59:05,979 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-31 22:59:05,993 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-31 22:59:06,553 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-31 22:59:07,249 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-31 22:59:11,966 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-31 22:59:11,973 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-31 22:59:11,988 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-31 22:59:11,998 p=2613 u=root |  ok: [ansiblewinsrv]
+2019-01-31 22:59:12,016 p=2613 u=root |  TASK [Display Variable name] *******************************************************************************************************************************************
+2019-01-31 22:59:12,096 p=2613 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "my name is  \"Dinesh Patil\" my company is \"{u'name': u'Generalmills', u'location': u'powai'}\" my company location is \"powai\"\n"
+}
+2019-01-31 22:59:12,110 p=2613 u=root |  TASK [display list items] **********************************************************************************************************************************************
+2019-01-31 22:59:12,194 p=2613 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our list is [{u'Dharmalingam Konar': {u'company': u'netmagic'}}, {u'Basantkumar Nayak': {u'company': u'capgemini'}}, {u'Prashant': {u'company': u'tcs'}}] first item in the list is {u'Dharmalingam Konar': {u'company': u'netmagic'}}\n"
+}
+2019-01-31 22:59:12,209 p=2613 u=root |  TASK [display array items] *********************************************************************************************************************************************
+2019-01-31 22:59:12,288 p=2613 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our features list is [u'Web-Server', u'Telnet-Client', u'Windows-Server-Backup'] first item in the features list is Web-Server\n"
+}
+2019-01-31 22:59:12,303 p=2613 u=root |  TASK [display variables from external files] ***************************************************************************************************************************
+2019-01-31 22:59:12,385 p=2613 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "our  input from the external files -- myname is Dinesh Patil first item in the features list is [u'Bits', u'Dhcp', u'Dnscache']\n"
+}
+2019-01-31 22:59:12,400 p=2613 u=root |  TASK [take input from user] ********************************************************************************************************************************************
+2019-01-31 22:59:12,481 p=2613 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "the input provided by you is fa\n"
+}
+2019-01-31 22:59:12,496 p=2613 u=root |  TASK [get the variables from fact] *************************************************************************************************************************************
+2019-01-31 22:59:12,599 p=2613 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "The os family is Windows\n"
+}
+2019-01-31 22:59:12,603 p=2613 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-31 22:59:12,603 p=2613 u=root |  ansiblewinsrv              : ok=7    changed=0    unreachable=0    failed=0   

@@ -1,0 +1,36 @@
+---
+-
+  hosts: win1 lin1
+  gather_facts: true # this will make not to gather facts before running tasks
+
+  tasks:
+       - name: add several users
+         user:
+           name: "{{ item.name }}"
+           state: present
+           groups: "{{ item.groups }}"
+         loop:
+            - { name: 'testuser1', groups: 'wheel' }
+            - { name: 'testuser2', groups: 'root' }
+
+# you can also use
+# loop:
+#    - {name: 'Dinesh' , company: 'Generalmills'} You can call this by item.name and item.company 
+# with_dict:
+#     dinesh:
+#        full_name: Dinesh Patil
+#     prathmesh:
+#        full_name: Prathmesh Salvi     
+
+# How to access above values  item.value.full_name
+#
+#
+#
+...
+
+
+# use same looping to stop the BITS and dhcp service
+
+
+
+

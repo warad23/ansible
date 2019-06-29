@@ -1,0 +1,11 @@
+---
+-
+  hosts: all
+  gather_facts: true # this will make not to gather facts before running tasks
+
+  tasks: 
+    - name: check Ip Address
+      debug:
+        msg: >
+             this is for windows {{ ansible_ip_addresses }}
+...

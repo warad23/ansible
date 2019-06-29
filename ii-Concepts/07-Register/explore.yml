@@ -1,0 +1,15 @@
+---
+-
+  hosts: win1 lin1
+  gather_facts: true # this will make not to gather facts before running tasks
+
+  tasks: 
+    - name: Display Register value
+      win_shell:  hostname
+      register: hostnamevar
+
+    - name: Show output
+      debug:
+        var: hostnamevar
+      
+...

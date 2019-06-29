@@ -1,0 +1,18 @@
+---
+-
+  hosts: win1 lin1
+  tasks:
+    - name: test Jinja if
+      debug:
+        msg: >
+            This is test if ansible
+             {% if ansible_hostname == "ANSIBLEWINSRV" -%}
+                   This is ansiblewinserver
+             {% elif ansible_hostname == "ubuntu" -%}
+                    This is ubuntu server
+             {% else -%}
+                   This is not found
+             {% endif %}
+
+
+# you can also use {% if ansible_hostname is defined -%}

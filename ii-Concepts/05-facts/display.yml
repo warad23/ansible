@@ -1,0 +1,12 @@
+---
+-
+  hosts: win1 lin1
+  gather_facts: true # this will make not to gather facts before running tasks
+
+  tasks: 
+    - name: check Ip Address
+      debug:
+        msg: >
+           this is for linux {{ ansible_default_ipv4.address}}
+           this is for windows {{ ansible_ip_addresses }}
+...

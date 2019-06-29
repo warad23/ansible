@@ -1,0 +1,22 @@
+---
+-
+  hosts: win1 lin1
+  gather_facts: true # this will make not to gather facts before running tasks
+
+  tasks: 
+    - name: Display Register value
+      win_shell:  hostname
+      register: hostnamevar
+      when: ansible_distribution == "Microsoft Windows Server Datacenter" # you can use 'and' / 'or' keywork for multiple condition 
+
+    - name: Show output
+      debug:
+        var: hostnamevar
+      
+
+# You can use below way as well
+#when: 
+ #       - ansible_distribution == "CentOS" 
+  #      - ansible_distribution_major_version | int >= 7
+
+...

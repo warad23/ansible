@@ -1,0 +1,69 @@
+---
+-
+  hosts: win1 lin1
+  gather_facts: true # this will make not to gather facts before running tasks
+
+  vars:
+    myname: "Dinesh Patil"
+    company: 
+       name: "Generalmills"
+       location: "powai"
+    student_list:
+      - Dharmalingam Konar:
+          company: netmagic
+      - Basantkumar Nayak:
+          company: capgemini
+      - Prashant:
+          company: tcs
+    features:
+       [Web-Server, Telnet-Client, Windows-Server-Backup]
+
+  vars_files:
+    - ext_variables.yml
+
+  vars_prompt: # this will prompt for the input
+    - name: servicename
+      private: false
+
+  
+  tasks:
+    - name: Display Variable name
+      debug:
+        msg: >
+              my name is  "{{myname}}"
+              my company is "{{company}}"
+              my company location is "{{company.location}}"
+
+    - name: display list items
+      debug:
+        msg: >
+            our list is {{student_list}}
+            first item in the list is {{student_list[0]}}
+
+
+    - name: display array items
+      debug:
+        msg: >
+            our features list is {{features}}
+            first item in the features list is {{features[0]}}
+
+    - name: display variables from external files
+      debug:
+        msg: >
+            our  input from the external files -- myname is {{myname}}
+            first item in the features list is {{servicesneedstodisable}}
+
+    - name: take input from user
+      debug:
+        msg: >
+            the input provided by you is {{servicename}}
+
+    - name: get the variables from fact
+      debug:
+        msg: >
+            The os family is {{ansible_os_family}}
+# you can use below msg if any of the value not found or not assigned
+# The port used for the {{ansible_os_family | default('windows') }}
+             
+
+...

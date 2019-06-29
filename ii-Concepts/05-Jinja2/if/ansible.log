@@ -1,0 +1,215 @@
+2019-01-30 04:53:39,902 p=1232 u=root |  PLAY [win1] ************************************************************************************************************************************************************
+2019-01-30 04:53:39,929 p=1232 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-30 04:53:40,288 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-30 04:53:40,366 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 04:53:40,382 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-30 04:53:40,394 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 04:53:40,536 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-30 04:53:40,555 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-30 04:53:41,265 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-30 04:53:42,043 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-30 04:54:02,057 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 500 1320
+2019-01-30 04:54:07,001 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-30 04:54:07,011 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-30 04:54:07,027 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-30 04:54:07,043 p=1232 u=root |  ok: [ansiblewinsrv]
+2019-01-30 04:54:07,065 p=1232 u=root |  TASK [test Jinja if] ***************************************************************************************************************************************************
+2019-01-30 04:54:07,162 p=1232 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "This is test if ansible\n "
+}
+2019-01-30 04:54:07,165 p=1232 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-30 04:54:07,165 p=1232 u=root |  ansiblewinsrv              : ok=2    changed=0    unreachable=0    failed=0   
+2019-01-30 04:57:04,894 p=1250 u=root |  PLAY [win1] ************************************************************************************************************************************************************
+2019-01-30 04:57:04,913 p=1250 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-30 04:57:05,023 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-30 04:57:05,037 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 04:57:05,041 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-30 04:57:05,052 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 04:57:05,161 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-30 04:57:05,178 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-30 04:57:05,843 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-30 04:57:06,716 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-30 04:57:12,098 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-30 04:57:12,106 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-30 04:57:12,123 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-30 04:57:12,133 p=1250 u=root |  ok: [ansiblewinsrv]
+2019-01-30 04:57:12,151 p=1250 u=root |  TASK [test Jinja if] ***************************************************************************************************************************************************
+2019-01-30 04:57:12,234 p=1250 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "This is test if ansible\n { if ansible_hostname == \"ansiblewinsrv\" -}\n       This is ansiblewinserver\n { endif }\n"
+}
+2019-01-30 04:57:12,238 p=1250 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-30 04:57:12,239 p=1250 u=root |  ansiblewinsrv              : ok=2    changed=0    unreachable=0    failed=0   
+2019-01-30 04:57:48,959 p=1263 u=root |  PLAY [win1] ************************************************************************************************************************************************************
+2019-01-30 04:57:48,978 p=1263 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-30 04:57:49,091 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-30 04:57:49,105 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 04:57:49,109 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-30 04:57:49,119 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 04:57:49,223 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-30 04:57:49,239 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-30 04:57:49,863 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-30 04:57:50,594 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-30 04:57:55,396 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-30 04:57:55,404 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-30 04:57:55,420 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-30 04:57:55,437 p=1263 u=root |  ok: [ansiblewinsrv]
+2019-01-30 04:57:55,455 p=1263 u=root |  TASK [test Jinja if] ***************************************************************************************************************************************************
+2019-01-30 04:57:55,545 p=1263 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "This is test if ansible\n \n"
+}
+2019-01-30 04:57:55,549 p=1263 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-30 04:57:55,550 p=1263 u=root |  ansiblewinsrv              : ok=2    changed=0    unreachable=0    failed=0   
+2019-01-30 04:58:25,083 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-30 04:58:25,096 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 04:58:25,100 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-30 04:58:25,112 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 04:58:25,216 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-30 04:58:25,232 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-30 04:58:25,864 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-30 04:58:26,616 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-30 04:58:31,637 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-30 04:58:31,645 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-30 04:58:31,661 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-30 04:58:31,679 p=1275 u=root |  ansiblewinsrv | SUCCESS => {
+    "ansible_facts": {
+        "ansible_architecture": "64-bit", 
+        "ansible_bios_date": "10/27/2017", 
+        "ansible_bios_version": "VMW71.00V.6997262.B64.1710270607", 
+        "ansible_date_time": {
+            "date": "2019-01-30", 
+            "day": "30", 
+            "epoch": "1548872910.0692", 
+            "hour": "18", 
+            "iso8601": "2019-01-30T12:58:30Z", 
+            "iso8601_basic": "20190130T182830053744", 
+            "iso8601_basic_short": "20190130T182830", 
+            "iso8601_micro": "2019-01-30T12:58:30.053744Z", 
+            "minute": "28", 
+            "month": "01", 
+            "second": "30", 
+            "time": "18:28:30", 
+            "tz": "India Standard Time", 
+            "tz_offset": "+05:30", 
+            "weekday": "Wednesday", 
+            "weekday_number": "3", 
+            "weeknumber": "4", 
+            "year": "2019"
+        }, 
+        "ansible_distribution": "Microsoft Windows Server Datacenter", 
+        "ansible_distribution_major_version": "10", 
+        "ansible_distribution_version": "10.0.17134.0", 
+        "ansible_domain": "", 
+        "ansible_env": {
+            "ALLUSERSPROFILE": "C:\\ProgramData", 
+            "APPDATA": "C:\\Users\\dinesh\\AppData\\Roaming", 
+            "COMPUTERNAME": "ANSIBLEWINSRV", 
+            "ComSpec": "C:\\Windows\\system32\\cmd.exe", 
+            "CommonProgramFiles": "C:\\Program Files\\Common Files", 
+            "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files", 
+            "CommonProgramW6432": "C:\\Program Files\\Common Files", 
+            "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData", 
+            "HOMEDRIVE": "C:", 
+            "HOMEPATH": "\\Users\\dinesh", 
+            "LOCALAPPDATA": "C:\\Users\\dinesh\\AppData\\Local", 
+            "LOGONSERVER": "\\\\ANSIBLEWINSRV", 
+            "NUMBER_OF_PROCESSORS": "2", 
+            "OS": "Windows_NT", 
+            "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL", 
+            "PROCESSOR_ARCHITECTURE": "AMD64", 
+            "PROCESSOR_IDENTIFIER": "AMD64 Family 21 Model 16 Stepping 1, AuthenticAMD", 
+            "PROCESSOR_LEVEL": "21", 
+            "PROCESSOR_REVISION": "1001", 
+            "PROMPT": "$P$G", 
+            "PSExecutionPolicyPreference": "Unrestricted", 
+            "PSModulePath": "C:\\Users\\dinesh\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules", 
+            "PUBLIC": "C:\\Users\\Public", 
+            "Path": "C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Users\\dinesh\\AppData\\Local\\Microsoft\\WindowsApps", 
+            "ProgramData": "C:\\ProgramData", 
+            "ProgramFiles": "C:\\Program Files", 
+            "ProgramFiles(x86)": "C:\\Program Files (x86)", 
+            "ProgramW6432": "C:\\Program Files", 
+            "SystemDrive": "C:", 
+            "SystemRoot": "C:\\Windows", 
+            "TEMP": "C:\\Users\\dinesh\\AppData\\Local\\Temp", 
+            "TMP": "C:\\Users\\dinesh\\AppData\\Local\\Temp", 
+            "USERDOMAIN": "ANSIBLEWINSRV", 
+            "USERDOMAIN_ROAMINGPROFILE": "ANSIBLEWINSRV", 
+            "USERNAME": "dinesh", 
+            "USERPROFILE": "C:\\Users\\dinesh", 
+            "windir": "C:\\Windows"
+        }, 
+        "ansible_fqdn": "ansiblewinsrv.", 
+        "ansible_hostname": "ANSIBLEWINSRV", 
+        "ansible_interfaces": [
+            {
+                "connection_name": "Ethernet0", 
+                "default_gateway": "192.168.2.1", 
+                "dns_domain": "Belkin", 
+                "interface_index": 6, 
+                "interface_name": "Intel(R) 82574L Gigabit Network Connection", 
+                "macaddress": "00:0C:29:26:3A:3B"
+            }
+        ], 
+        "ansible_ip_addresses": [
+            "192.168.2.110", 
+            "fe80::a909:568d:4cd5:d19e"
+        ], 
+        "ansible_kernel": "10.0.17134.0", 
+        "ansible_lastboot": "2019-01-30 16:53:56Z", 
+        "ansible_machine_id": "S-1-5-21-229082103-2515665913-731631038", 
+        "ansible_memtotal_mb": 8191, 
+        "ansible_nodename": "ansiblewinsrv.", 
+        "ansible_os_family": "Windows", 
+        "ansible_os_name": "Microsoft Windows Server Datacenter", 
+        "ansible_os_product_type": "server", 
+        "ansible_owner_contact": "", 
+        "ansible_owner_name": "Windows User", 
+        "ansible_powershell_version": 5, 
+        "ansible_processor": [], 
+        "ansible_processor_cores": 1, 
+        "ansible_processor_count": 2, 
+        "ansible_processor_threads_per_core": 0.5, 
+        "ansible_processor_vcpus": 0.5, 
+        "ansible_product_name": "VMware7,1", 
+        "ansible_product_serial": "VMware-56 4d db 33 4b c6 e2 de-66 69 a4 d3 35 26 3a 3b", 
+        "ansible_reboot_pending": false, 
+        "ansible_swaptotal_mb": 0, 
+        "ansible_system": "Win32NT", 
+        "ansible_system_description": "", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_uptime_seconds": 5677, 
+        "ansible_user_dir": "C:\\Users\\dinesh", 
+        "ansible_user_gecos": "", 
+        "ansible_user_id": "dinesh", 
+        "ansible_user_sid": "S-1-5-21-229082103-2515665913-731631038-1000", 
+        "ansible_win_rm_certificate_expires": "2020-01-29 16:51:43", 
+        "ansible_windows_domain": "WORKGROUP", 
+        "ansible_windows_domain_member": false, 
+        "ansible_windows_domain_role": "Stand-alone server", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2019-01-30 04:59:41,313 p=1287 u=root |  PLAY [win1] ************************************************************************************************************************************************************
+2019-01-30 04:59:41,332 p=1287 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-30 04:59:41,446 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-30 04:59:41,459 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 04:59:41,463 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-30 04:59:41,474 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 04:59:41,580 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-30 04:59:41,602 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-30 04:59:42,246 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-30 04:59:42,980 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-30 04:59:48,078 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-30 04:59:48,085 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-30 04:59:48,102 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-30 04:59:48,120 p=1287 u=root |  ok: [ansiblewinsrv]
+2019-01-30 04:59:48,141 p=1287 u=root |  TASK [test Jinja if] ***************************************************************************************************************************************************
+2019-01-30 04:59:48,227 p=1287 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "This is test if ansible\n This is ansiblewinserver\n \n"
+}
+2019-01-30 04:59:48,231 p=1287 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-30 04:59:48,231 p=1287 u=root |  ansiblewinsrv              : ok=2    changed=0    unreachable=0    failed=0   

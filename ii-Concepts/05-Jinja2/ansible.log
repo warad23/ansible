@@ -1,0 +1,827 @@
+2019-01-30 05:08:22,889 p=1338 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-30 05:08:22,913 p=1338 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-30 05:08:23,061 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-30 05:08:23,084 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 05:08:23,100 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-30 05:08:23,112 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 05:08:23,175 p=1338 u=root |  fatal: [ubuntu]: FAILED! => {"msg": "Using a SSH password instead of a key is not possible because Host Key checking is enabled and sshpass does not support this.  Please add this host's fingerprint to your known_hosts file to manage this host."}
+2019-01-30 05:08:23,239 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-30 05:08:23,256 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-30 05:08:23,894 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-30 05:08:24,632 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-30 05:08:30,000 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-30 05:08:30,007 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-30 05:08:30,026 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-30 05:08:30,036 p=1338 u=root |  ok: [ansiblewinsrv]
+2019-01-30 05:08:30,055 p=1338 u=root |  TASK [test Jinja if] ***************************************************************************************************************************************************
+2019-01-30 05:08:30,153 p=1338 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "This is test if ansible\n This is ansiblewinserver\n "
+}
+2019-01-30 05:08:30,158 p=1338 u=root |  	to retry, use: --limit @/home/dinesh/ansiclass/Concepts/Jinja2/if_ply.retry
+
+2019-01-30 05:08:30,158 p=1338 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-30 05:08:30,159 p=1338 u=root |  ansiblewinsrv              : ok=2    changed=0    unreachable=0    failed=0   
+2019-01-30 05:08:30,159 p=1338 u=root |  ubuntu                     : ok=0    changed=0    unreachable=0    failed=1   
+2019-01-30 05:11:27,721 p=1369 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-30 05:11:27,736 p=1369 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-30 05:11:27,847 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-30 05:11:27,861 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 05:11:27,864 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-30 05:11:27,875 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 05:11:27,980 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-30 05:11:27,996 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-30 05:11:28,612 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-30 05:11:29,306 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-30 05:11:31,326 p=1369 u=root |  ok: [ubuntu]
+2019-01-30 05:11:34,405 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-30 05:11:34,412 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-30 05:11:34,428 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-30 05:11:34,437 p=1369 u=root |  ok: [ansiblewinsrv]
+2019-01-30 05:11:34,455 p=1369 u=root |  TASK [test Jinja if] ***************************************************************************************************************************************************
+2019-01-30 05:11:34,540 p=1369 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "This is test if ansible\n This is ansiblewinserver\n "
+}
+2019-01-30 05:11:34,591 p=1369 u=root |  ok: [ubuntu] => {
+    "msg": "This is test if ansible\n "
+}
+2019-01-30 05:11:34,595 p=1369 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-30 05:11:34,596 p=1369 u=root |  ansiblewinsrv              : ok=2    changed=0    unreachable=0    failed=0   
+2019-01-30 05:11:34,596 p=1369 u=root |  ubuntu                     : ok=2    changed=0    unreachable=0    failed=0   
+2019-01-30 05:11:56,884 p=1454 u=root |  ubuntu | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "192.168.2.102"
+        ], 
+        "ansible_all_ipv6_addresses": [
+            "fe80::20c:29ff:feef:e8d5"
+        ], 
+        "ansible_apparmor": {
+            "status": "enabled"
+        }, 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "05/19/2017", 
+        "ansible_bios_version": "6.00", 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-4.4.0-131-generic", 
+            "find_preseed": "/preseed.cfg", 
+            "noprompt": true, 
+            "quiet": true, 
+            "ro": true, 
+            "root": "UUID=096bb266-38ee-421e-89b1-8bf4717abf69"
+        }, 
+        "ansible_date_time": {
+            "date": "2019-01-30", 
+            "day": "30", 
+            "epoch": "1548853916", 
+            "hour": "05", 
+            "iso8601": "2019-01-30T13:11:56Z", 
+            "iso8601_basic": "20190130T051156692273", 
+            "iso8601_basic_short": "20190130T051156", 
+            "iso8601_micro": "2019-01-30T13:11:56.692461Z", 
+            "minute": "11", 
+            "month": "01", 
+            "second": "56", 
+            "time": "05:11:56", 
+            "tz": "PST", 
+            "tz_offset": "-0800", 
+            "weekday": "Wednesday", 
+            "weekday_number": "3", 
+            "weeknumber": "04", 
+            "year": "2019"
+        }, 
+        "ansible_default_ipv4": {
+            "address": "192.168.2.102", 
+            "alias": "ens33", 
+            "broadcast": "192.168.2.255", 
+            "gateway": "192.168.2.1", 
+            "interface": "ens33", 
+            "macaddress": "00:0c:29:ef:e8:d5", 
+            "mtu": 1500, 
+            "netmask": "255.255.255.0", 
+            "network": "192.168.2.0", 
+            "type": "ether"
+        }, 
+        "ansible_default_ipv6": {}, 
+        "ansible_device_links": {
+            "ids": {
+                "sr0": [
+                    "ata-VMware_Virtual_SATA_CDRW_Drive_01000000000000000001"
+                ]
+            }, 
+            "labels": {}, 
+            "masters": {}, 
+            "uuids": {
+                "sda1": [
+                    "096bb266-38ee-421e-89b1-8bf4717abf69"
+                ], 
+                "sda5": [
+                    "878604c3-025d-4718-852a-77b280efd0bf"
+                ]
+            }
+        }, 
+        "ansible_devices": {
+            "loop0": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop1": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop2": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop3": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop4": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop5": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop6": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop7": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "sda": {
+                "holders": [], 
+                "host": "SCSI storage controller: LSI Logic / Symbios Logic 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI (rev 01)", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware Virtual S", 
+                "partitions": {
+                    "sda1": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": [
+                                "096bb266-38ee-421e-89b1-8bf4717abf69"
+                            ]
+                        }, 
+                        "sectors": "60911616", 
+                        "sectorsize": 512, 
+                        "size": "29.04 GB", 
+                        "start": "2048", 
+                        "uuid": "096bb266-38ee-421e-89b1-8bf4717abf69"
+                    }, 
+                    "sda2": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": []
+                        }, 
+                        "sectors": "2", 
+                        "sectorsize": 512, 
+                        "size": "1.00 KB", 
+                        "start": "60915710", 
+                        "uuid": null
+                    }, 
+                    "sda5": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": [
+                                "878604c3-025d-4718-852a-77b280efd0bf"
+                            ]
+                        }, 
+                        "sectors": "1996800", 
+                        "sectorsize": 512, 
+                        "size": "975.00 MB", 
+                        "start": "60915712", 
+                        "uuid": "878604c3-025d-4718-852a-77b280efd0bf"
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "62914560", 
+                "sectorsize": "512", 
+                "size": "30.00 GB", 
+                "support_discard": "0", 
+                "vendor": "VMware,", 
+                "virtual": 1
+            }, 
+            "sr0": {
+                "holders": [], 
+                "host": "SATA controller: VMware SATA AHCI controller", 
+                "links": {
+                    "ids": [
+                        "ata-VMware_Virtual_SATA_CDRW_Drive_01000000000000000001"
+                    ], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "VMware SATA CD01", 
+                "partitions": {}, 
+                "removable": "1", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "2097151", 
+                "sectorsize": "512", 
+                "size": "1024.00 MB", 
+                "support_discard": "0", 
+                "vendor": "NECVMWar", 
+                "virtual": 1
+            }
+        }, 
+        "ansible_distribution": "Ubuntu", 
+        "ansible_distribution_file_parsed": true, 
+        "ansible_distribution_file_path": "/etc/os-release", 
+        "ansible_distribution_file_variety": "Debian", 
+        "ansible_distribution_major_version": "16", 
+        "ansible_distribution_release": "xenial", 
+        "ansible_distribution_version": "16.04", 
+        "ansible_dns": {
+            "nameservers": [
+                "192.168.2.1"
+            ], 
+            "search": [
+                "Belkin"
+            ]
+        }, 
+        "ansible_domain": "", 
+        "ansible_effective_group_id": 1000, 
+        "ansible_effective_user_id": 1000, 
+        "ansible_ens33": {
+            "active": true, 
+            "device": "ens33", 
+            "ipv4": {
+                "address": "192.168.2.102", 
+                "broadcast": "192.168.2.255", 
+                "netmask": "255.255.255.0", 
+                "network": "192.168.2.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "fe80::20c:29ff:feef:e8d5", 
+                    "prefix": "64", 
+                    "scope": "link"
+                }
+            ], 
+            "macaddress": "00:0c:29:ef:e8:d5", 
+            "module": "e1000", 
+            "mtu": 1500, 
+            "pciid": "0000:02:01.0", 
+            "promisc": false, 
+            "speed": 1000, 
+            "type": "ether"
+        }, 
+        "ansible_env": {
+            "HOME": "/home/dinesh", 
+            "LANG": "en_US.UTF-8", 
+            "LANGUAGE": "en_US:", 
+            "LOGNAME": "dinesh", 
+            "MAIL": "/var/mail/dinesh", 
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games", 
+            "PWD": "/home/dinesh", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "1", 
+            "SSH_CLIENT": "127.0.0.1 59630 22", 
+            "SSH_CONNECTION": "127.0.0.1 59630 127.0.1.1 22", 
+            "SSH_TTY": "/dev/pts/3", 
+            "TERM": "xterm", 
+            "USER": "dinesh", 
+            "XDG_RUNTIME_DIR": "/run/user/1000", 
+            "XDG_SESSION_ID": "5", 
+            "_": "/bin/sh"
+        }, 
+        "ansible_fips": false, 
+        "ansible_form_factor": "Other", 
+        "ansible_fqdn": "ubuntu", 
+        "ansible_hostname": "ubuntu", 
+        "ansible_interfaces": [
+            "lo", 
+            "ens33"
+        ], 
+        "ansible_is_chroot": false, 
+        "ansible_iscsi_iqn": "", 
+        "ansible_kernel": "4.4.0-131-generic", 
+        "ansible_lo": {
+            "active": true, 
+            "device": "lo", 
+            "ipv4": {
+                "address": "127.0.0.1", 
+                "broadcast": "host", 
+                "netmask": "255.0.0.0", 
+                "network": "127.0.0.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "::1", 
+                    "prefix": "128", 
+                    "scope": "host"
+                }
+            ], 
+            "mtu": 65536, 
+            "promisc": false, 
+            "type": "loopback"
+        }, 
+        "ansible_local": {}, 
+        "ansible_lsb": {
+            "codename": "xenial", 
+            "description": "Ubuntu 16.04.5 LTS", 
+            "id": "Ubuntu", 
+            "major_release": "16", 
+            "release": "16.04"
+        }, 
+        "ansible_machine": "x86_64", 
+        "ansible_machine_id": "7cf64e5d4e96a581cd3b10f95c40a871", 
+        "ansible_memfree_mb": 1583, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 1760, 
+                "used": 222
+            }, 
+            "real": {
+                "free": 1583, 
+                "total": 1982, 
+                "used": 399
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 974, 
+                "total": 974, 
+                "used": 0
+            }
+        }, 
+        "ansible_memtotal_mb": 1982, 
+        "ansible_mounts": [
+            {
+                "block_available": 6574307, 
+                "block_size": 4096, 
+                "block_total": 7461622, 
+                "block_used": 887315, 
+                "device": "/dev/sda1", 
+                "fstype": "ext4", 
+                "inode_available": 1808630, 
+                "inode_total": 1905008, 
+                "inode_used": 96378, 
+                "mount": "/", 
+                "options": "rw,relatime,errors=remount-ro,data=ordered", 
+                "size_available": 26928361472, 
+                "size_total": 30562803712, 
+                "uuid": "096bb266-38ee-421e-89b1-8bf4717abf69"
+            }
+        ], 
+        "ansible_nodename": "ubuntu", 
+        "ansible_os_family": "Debian", 
+        "ansible_pkg_mgr": "apt", 
+        "ansible_processor": [
+            "0", 
+            "AuthenticAMD", 
+            "AMD A8-4500M APU with Radeon(tm) HD Graphics", 
+            "1", 
+            "AuthenticAMD", 
+            "AMD A8-4500M APU with Radeon(tm) HD Graphics", 
+            "2", 
+            "AuthenticAMD", 
+            "AMD A8-4500M APU with Radeon(tm) HD Graphics", 
+            "3", 
+            "AuthenticAMD", 
+            "AMD A8-4500M APU with Radeon(tm) HD Graphics"
+        ], 
+        "ansible_processor_cores": 2, 
+        "ansible_processor_count": 2, 
+        "ansible_processor_threads_per_core": 1, 
+        "ansible_processor_vcpus": 4, 
+        "ansible_product_name": "VMware Virtual Platform", 
+        "ansible_product_serial": "NA", 
+        "ansible_product_uuid": "NA", 
+        "ansible_product_version": "None", 
+        "ansible_python": {
+            "executable": "/usr/bin/python", 
+            "has_sslcontext": true, 
+            "type": "CPython", 
+            "version": {
+                "major": 2, 
+                "micro": 12, 
+                "minor": 7, 
+                "releaselevel": "final", 
+                "serial": 0
+            }, 
+            "version_info": [
+                2, 
+                7, 
+                12, 
+                "final", 
+                0
+            ]
+        }, 
+        "ansible_python_version": "2.7.12", 
+        "ansible_real_group_id": 1000, 
+        "ansible_real_user_id": 1000, 
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        }, 
+        "ansible_selinux_python_present": false, 
+        "ansible_service_mgr": "systemd", 
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAOsVnpeFQcRDBEepgEQrEr9AeGWSbRoOyge99uVS7MihiOCC3KdHhiA59KzCDU/U9oEDSNapz87QhScwLM2/0Q3K6LTXtmvzWyMvRVzuMK+pZgOtboTp09wN4lShoNn9z7FwCaBvPxlGAcUzAw609kyBBushEnLGOV0AhAxvAdWjAAAAFQCJAa0rjGKGUsqsJ1WP2FNQMSZkzwAAAIBQUSFocvYt8QYAktUAs5c7SG2y/IRw5ZbRv8XLRfYDCX8StS4SfSVCaeYjtBObsZh6Ualy5S5GfgoJvyVCN98aRErEhIKiJ3Mw2u5TTYKz2EBJwwgxftYLNH5Rd1KKcUma54uWQytljW2Uq5Gdx4KU6DArN3gl8QvT738vu+BCNgAAAIEAslKeOY81tNZa8DJu7GDVXxWD7aonfu26Zjs22sI5lW6MJe9iC+LYuOvfwhBnWKR0UBt8l8LW20gi+7PvFb/m3AnOb1MAzaIvgd8qulxZyp67ayIs3KPSfYXsq5oljxntsEztV1Xnfs3xz9EISRV+e+Tkby64nzc1LqETlQHoXD8=", 
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGa2X3t3Atx9EXR5Cs3FGkqda/FamGU04GCgodFk4i3eFRC8MJpe8IpPhgfvhPVEnUW8+OmEZdNaWCrnFYbakZM=", 
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIKFsDIn4i17XwuWwwJceq02JloeQHmZds2mRDCT30UUV", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCd975pQgPMFBU9zhwLgVzoBnfQ/Yfd96yYp61GoTtUbc08VREbYoX28iMe2+snYhrg+iDQS5r3elfIZt0QNHBDWrQKdQREix5MIt5Jc7SjrLQyoT4Dnh7WGOyNHU8Qv56KJc7xObkC+XgOhi1zGxJb9yD6+PkZ6smUis2ghqky7LhB5uM8pWm+CBX4gvNwZZFnJ+8uplswJyxEDP6tkqvbvTBp8K2nDF/YoTfU/4cYzeva2vI8MzYWXhh5zCpJeswzanx0wUYOTYOQZTcnAJs4mml+CviA19aclSl3UV9hs0MTSVSYx4HVkIF36nhXKuFcuIlbIOr/dXDKynHg3VyN", 
+        "ansible_swapfree_mb": 974, 
+        "ansible_swaptotal_mb": 974, 
+        "ansible_system": "Linux", 
+        "ansible_system_capabilities": [
+            ""
+        ], 
+        "ansible_system_capabilities_enforced": "True", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_uptime_seconds": 5375, 
+        "ansible_user_dir": "/home/dinesh", 
+        "ansible_user_gecos": "ansiblecontrolserver,,,", 
+        "ansible_user_gid": 1000, 
+        "ansible_user_id": "dinesh", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 1000, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "VMware", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2019-01-30 05:14:07,641 p=1527 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-30 05:14:07,656 p=1527 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-30 05:14:07,756 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-30 05:14:07,770 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 05:14:07,773 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-30 05:14:07,784 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 05:14:07,880 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-30 05:14:07,894 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-30 05:14:08,444 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-30 05:14:09,163 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-30 05:14:10,612 p=1527 u=root |  ok: [ubuntu]
+2019-01-30 05:14:14,154 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-30 05:14:14,161 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-30 05:14:14,177 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-30 05:14:14,184 p=1527 u=root |  ok: [ansiblewinsrv]
+2019-01-30 05:14:14,203 p=1527 u=root |  TASK [test Jinja if] ***************************************************************************************************************************************************
+2019-01-30 05:14:14,292 p=1527 u=root |  ok: [ansiblewinsrv] => {
+    "msg": "This is test if ansible\n This is ansiblewinserver\n "
+}
+2019-01-30 05:14:14,343 p=1527 u=root |  ok: [ubuntu] => {
+    "msg": "This is test if ansible\n This is ubuntu server\n "
+}
+2019-01-30 05:14:14,348 p=1527 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-30 05:14:14,348 p=1527 u=root |  ansiblewinsrv              : ok=2    changed=0    unreachable=0    failed=0   
+2019-01-30 05:14:14,349 p=1527 u=root |  ubuntu                     : ok=2    changed=0    unreachable=0    failed=0   
+2019-01-30 05:25:31,695 p=1631 u=root |  PLAY [win1 lin1] ***************************************************************
+2019-01-30 05:25:31,715 p=1631 u=root |  TASK [Gathering Facts] *********************************************************
+2019-01-30 05:25:31,859 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-30 05:25:31,878 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 05:25:31,883 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-30 05:25:31,896 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 05:25:32,028 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-30 05:25:32,046 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-30 05:25:32,763 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-30 05:25:33,570 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-30 05:25:34,750 p=1631 u=root |  ok: [ubuntu]
+2019-01-30 05:25:38,911 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-30 05:25:38,919 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-30 05:25:38,935 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-30 05:25:38,943 p=1631 u=root |  ok: [ansiblewinsrv]
+2019-01-30 05:25:38,963 p=1631 u=root |  TASK [test Jinja if] ***********************************************************
+2019-01-30 05:25:39,023 p=1631 u=root |  fatal: [ansiblewinsrv]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'ansible_all_ipv4_addresses' is undefined\n\nThe error appears to have been in '/home/dinesh/ansiclass/Concepts/Jinja2/for_ply.yml': line 5, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: test Jinja if\n      ^ here\n"}
+2019-01-30 05:25:39,101 p=1631 u=root |  ok: [ubuntu] => {
+    "msg": "This is test if ansible\n IP Address entry 1 = 192.168.2.102\n \n"
+}
+2019-01-30 05:25:39,105 p=1631 u=root |  	to retry, use: --limit @/home/dinesh/ansiclass/Concepts/Jinja2/for_ply.retry
+
+2019-01-30 05:25:39,105 p=1631 u=root |  PLAY RECAP *********************************************************************
+2019-01-30 05:25:39,106 p=1631 u=root |  ansiblewinsrv              : ok=1    changed=0    unreachable=0    failed=1   
+2019-01-30 05:25:39,106 p=1631 u=root |  ubuntu                     : ok=2    changed=0    unreachable=0    failed=0   
+2019-01-30 05:26:26,508 p=1716 u=root |  PLAY [win1 lin1] *******************************************************************************************************************************************************
+2019-01-30 05:26:26,523 p=1716 u=root |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-30 05:26:26,623 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-30 05:26:26,637 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 05:26:26,640 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-30 05:26:26,651 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 05:26:26,755 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-30 05:26:26,771 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-30 05:26:27,366 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-30 05:26:28,084 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-30 05:26:32,733 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-30 05:26:32,740 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-30 05:26:32,757 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-30 05:26:32,767 p=1716 u=root |  ok: [ansiblewinsrv]
+2019-01-30 05:26:32,787 p=1716 u=root |  TASK [test Jinja if] ***************************************************************************************************************************************************
+2019-01-30 05:26:32,827 p=1716 u=root |  fatal: [ansiblewinsrv]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'ansible_all_ipv4_addresses' is undefined\n\nThe error appears to have been in '/home/dinesh/ansiclass/Concepts/Jinja2/for_ply.yml': line 5, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: test Jinja if\n      ^ here\n"}
+2019-01-30 05:26:32,831 p=1716 u=root |  	to retry, use: --limit @/home/dinesh/ansiclass/Concepts/Jinja2/for_ply.retry
+
+2019-01-30 05:26:32,831 p=1716 u=root |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-30 05:26:32,832 p=1716 u=root |  ansiblewinsrv              : ok=1    changed=0    unreachable=0    failed=1   
+2019-01-30 05:27:07,372 urllib3.connectionpool Starting new HTTPS connection (1): ansiblewinsrv:5986
+2019-01-30 05:27:07,384 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 05:27:07,387 urllib3.connectionpool Resetting dropped connection: ansiblewinsrv
+2019-01-30 05:27:07,398 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-30 05:27:07,499 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 1636
+2019-01-30 05:27:07,516 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-30 05:27:08,106 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-30 05:27:08,822 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-30 05:27:13,655 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 7459
+2019-01-30 05:27:13,662 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-30 05:27:13,678 urllib3.connectionpool https://ansiblewinsrv:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-30 05:27:13,689 p=1731 u=root |  ansiblewinsrv | SUCCESS => {
+    "ansible_facts": {
+        "ansible_architecture": "64-bit", 
+        "ansible_bios_date": "10/27/2017", 
+        "ansible_bios_version": "VMW71.00V.6997262.B64.1710270607", 
+        "ansible_date_time": {
+            "date": "2019-01-30", 
+            "day": "30", 
+            "epoch": "1548874629.4375", 
+            "hour": "18", 
+            "iso8601": "2019-01-30T13:27:09Z", 
+            "iso8601_basic": "20190130T185709421687", 
+            "iso8601_basic_short": "20190130T185709", 
+            "iso8601_micro": "2019-01-30T13:27:09.421687Z", 
+            "minute": "57", 
+            "month": "01", 
+            "second": "09", 
+            "time": "18:57:09", 
+            "tz": "India Standard Time", 
+            "tz_offset": "+05:30", 
+            "weekday": "Wednesday", 
+            "weekday_number": "3", 
+            "weeknumber": "4", 
+            "year": "2019"
+        }, 
+        "ansible_distribution": "Microsoft Windows Server Datacenter", 
+        "ansible_distribution_major_version": "10", 
+        "ansible_distribution_version": "10.0.17134.0", 
+        "ansible_domain": "", 
+        "ansible_env": {
+            "ALLUSERSPROFILE": "C:\\ProgramData", 
+            "APPDATA": "C:\\Users\\dinesh\\AppData\\Roaming", 
+            "COMPUTERNAME": "ANSIBLEWINSRV", 
+            "ComSpec": "C:\\Windows\\system32\\cmd.exe", 
+            "CommonProgramFiles": "C:\\Program Files\\Common Files", 
+            "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files", 
+            "CommonProgramW6432": "C:\\Program Files\\Common Files", 
+            "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData", 
+            "HOMEDRIVE": "C:", 
+            "HOMEPATH": "\\Users\\dinesh", 
+            "LOCALAPPDATA": "C:\\Users\\dinesh\\AppData\\Local", 
+            "LOGONSERVER": "\\\\ANSIBLEWINSRV", 
+            "NUMBER_OF_PROCESSORS": "2", 
+            "OS": "Windows_NT", 
+            "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL", 
+            "PROCESSOR_ARCHITECTURE": "AMD64", 
+            "PROCESSOR_IDENTIFIER": "AMD64 Family 21 Model 16 Stepping 1, AuthenticAMD", 
+            "PROCESSOR_LEVEL": "21", 
+            "PROCESSOR_REVISION": "1001", 
+            "PROMPT": "$P$G", 
+            "PSExecutionPolicyPreference": "Unrestricted", 
+            "PSModulePath": "C:\\Users\\dinesh\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules", 
+            "PUBLIC": "C:\\Users\\Public", 
+            "Path": "C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Users\\dinesh\\AppData\\Local\\Microsoft\\WindowsApps", 
+            "ProgramData": "C:\\ProgramData", 
+            "ProgramFiles": "C:\\Program Files", 
+            "ProgramFiles(x86)": "C:\\Program Files (x86)", 
+            "ProgramW6432": "C:\\Program Files", 
+            "SystemDrive": "C:", 
+            "SystemRoot": "C:\\Windows", 
+            "TEMP": "C:\\Users\\dinesh\\AppData\\Local\\Temp", 
+            "TMP": "C:\\Users\\dinesh\\AppData\\Local\\Temp", 
+            "USERDOMAIN": "ANSIBLEWINSRV", 
+            "USERDOMAIN_ROAMINGPROFILE": "ANSIBLEWINSRV", 
+            "USERNAME": "dinesh", 
+            "USERPROFILE": "C:\\Users\\dinesh", 
+            "windir": "C:\\Windows"
+        }, 
+        "ansible_fqdn": "ansiblewinsrv.", 
+        "ansible_hostname": "ANSIBLEWINSRV", 
+        "ansible_interfaces": [
+            {
+                "connection_name": "Ethernet0", 
+                "default_gateway": "192.168.2.1", 
+                "dns_domain": "Belkin", 
+                "interface_index": 6, 
+                "interface_name": "Intel(R) 82574L Gigabit Network Connection", 
+                "macaddress": "00:0C:29:26:3A:3B"
+            }
+        ], 
+        "ansible_ip_addresses": [
+            "192.168.2.110", 
+            "fe80::a909:568d:4cd5:d19e"
+        ], 
+        "ansible_kernel": "10.0.17134.0", 
+        "ansible_lastboot": "2019-01-30 16:53:56Z", 
+        "ansible_machine_id": "S-1-5-21-229082103-2515665913-731631038", 
+        "ansible_memtotal_mb": 8191, 
+        "ansible_nodename": "ansiblewinsrv.", 
+        "ansible_os_family": "Windows", 
+        "ansible_os_name": "Microsoft Windows Server Datacenter", 
+        "ansible_os_product_type": "server", 
+        "ansible_owner_contact": "", 
+        "ansible_owner_name": "Windows User", 
+        "ansible_powershell_version": 5, 
+        "ansible_processor": [], 
+        "ansible_processor_cores": 1, 
+        "ansible_processor_count": 2, 
+        "ansible_processor_threads_per_core": 0.5, 
+        "ansible_processor_vcpus": 0.5, 
+        "ansible_product_name": "VMware7,1", 
+        "ansible_product_serial": "VMware-56 4d db 33 4b c6 e2 de-66 69 a4 d3 35 26 3a 3b", 
+        "ansible_reboot_pending": false, 
+        "ansible_swaptotal_mb": 0, 
+        "ansible_system": "Win32NT", 
+        "ansible_system_description": "", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_uptime_seconds": 7396, 
+        "ansible_user_dir": "C:\\Users\\dinesh", 
+        "ansible_user_gecos": "", 
+        "ansible_user_id": "dinesh", 
+        "ansible_user_sid": "S-1-5-21-229082103-2515665913-731631038-1000", 
+        "ansible_win_rm_certificate_expires": "2020-01-29 16:51:43", 
+        "ansible_windows_domain": "WORKGROUP", 
+        "ansible_windows_domain_member": false, 
+        "ansible_windows_domain_role": "Stand-alone server", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}

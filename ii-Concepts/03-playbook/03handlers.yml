@@ -1,0 +1,27 @@
+---
+-
+ 
+  # Target: where our play will run and options it will run with
+  hosts: mywin1
+
+  # Variable: variables that will apply to the play, on all target systems
+  vars:
+   sourcefile: "testvariable.txt"
+  # Task: the list of tasks that will be executed within the playbook
+  tasks:
+    - name: copy the files from this to remote
+      win_copy:
+        src: "{{sourcefile}}"
+        dest: C:/temp.txt
+      notify: my new handler
+
+  # Handlers: handlers that are executed as a notify key from a task
+  handlers:
+   - name: my new handler
+     debug:
+       msg: my files copied
+  # Roles: list of roles to be imported into the play
+  # you can add when: ansible_distribution == "windows"
+
+# Three dots indicate the end of a YAML document
+...

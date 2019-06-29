@@ -1,0 +1,18 @@
+
+{
+	"mywin1": {
+
+              "hosts":{
+                        "ansiwindows": {
+                             "ansible_user": "administrator",
+                             "ansible_password": "dineshSRV@123",
+                             "ansible_winrm_transport": "ntlm",
+                             "ansible_connection": "winrm",
+                             "ansible_winrm_server_cert_validation": "ignore"
+        	        },
+               "vars":{
+                    "ansible_port": "5985"
+               }
+		}
+	}
+}

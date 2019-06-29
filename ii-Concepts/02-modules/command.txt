@@ -1,0 +1,5 @@
+#Refer windows modules list
+https://docs.ansible.com/ansible/latest/modules/list_of_windows_modules.html
+
+
+ansible winsrv11 -m win_copy -a "content='test' dest='C:\ansible.txt'" -i hosts.yml 

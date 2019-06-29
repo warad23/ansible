@@ -1,0 +1,18 @@
+Refer
+https://docs.ansible.com/ansible/2.3/intro_inventory.html
+
+Privilege escalation (see Ansible Privilege Escalation for further details):
+
+ansible_become
+Equivalent to ansible_sudo or ansible_su, allows to force privilege escalation
+ansible_become_method
+Allows to set privilege escalation method
+ansible_become_user
+Equivalent to ansible_sudo_user or ansible_su_user, allows to set the user you become through privilege escalation
+ansible_become_pass
+Equivalent to ansible_sudo_pass or ansible_su_pass, allows you to set the privilege escalation password (never store this variable in plain text; always use a vault. See Variables and Vaults)
+
+#refer for more details
+https://docs.ansible.com/ansible/latest/user_guide/become.html
+https://docs.ansible.com/ansible/latest/plugins/become/runas.html
+

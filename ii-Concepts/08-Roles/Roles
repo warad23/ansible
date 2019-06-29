@@ -1,0 +1,107 @@
+Larger Projects are made easier to manage
+
+Roles are grouped with logical structure , making easier to share
+
+like web server , dn server
+
+directory structure
+
+site.yml
+webservers.yml
+fooservers.yml
+roles/
+   common/
+     tasks/
+     handlers/
+        main.yml
+     files/  --- copy or script module
+     templates/
+     vars/
+        main.yml
+     defaults/
+         main.yml - default variable for roles
+     meta/
+        main.yml - dependencies for roles
+   webservers/
+     tasks/
+        main.yml
+     defaults/
+     meta/
+
+tasks - contains the main list of tasks to be executed by the role.
+handlers - contains handlers, which may be used by this role or even anywhere outside this role.
+defaults - default variables for the role (see Using Variables for more information).
+vars - other variables for the role (see Using Variables for more information).
+files - contains files which can be deployed via this role.
+templates - contains templates which can be deployed via this role.
+meta - defines some meta data for this role. See below for more details.
+
+sequence
+If roles/x/tasks/main.yml exists, tasks listed therein will be added to the play.
+If roles/x/handlers/main.yml exists, handlers listed therein will be added to the play.
+If roles/x/vars/main.yml exists, variables listed therein will be added to the play.
+If roles/x/defaults/main.yml exists, variables listed therein will be added to the play.
+If roles/x/meta/main.yml exists, any role dependencies listed therein will be added to the list of roles (1.3 and later).
+Any copy, script, template or include tasks (in the role) can reference files in roles/x/{files,templates,tasks}/ (dir depends on task) without having to path them relatively or absolutely.
+
+
+
+
+ansible-galaxy init myrole
+
+---
+
+- hosts: webservers
+  tasks:
+  - debug:
+      msg: "before we run our role"
+  - import_role:
+      name: example
+  - include_role:
+      name: example
+  - debug:
+      msg: "after we ran our role"
+
+
+
+
+---
+
+- hosts: webservers
+  roles:
+    - role: '/path/to/my/roles/common'
+
+
+
+
+
+- hosts: webservers
+  tasks:
+  - include_role:
+       name: foo_app_instance
+    vars:
+      dir: '/opt/a'
+      app_port: 5000
+
+
+
+    - hosts: webservers
+  tasks:
+  - include_role:
+      name: some_role
+    when: "ansible_facts['os_family'] == 'RedHat'"
+
+
+    installign roles
+    ansible-galaxy install username.role_name
+
+
+    ansible-galaxy search elasticsearch
+
+
+    ansible-galaxy info username.role_name
+
+
+    ansible-galaxy list
+
+    ansible-galaxy login

@@ -1,0 +1,24 @@
+ansible-vault create secrets.yml
+
+mypass: test@123
+
+
+
+echo "MyPassword" >passwordfile
+
+ansible-vault create --vault-password-file passwordfile more_secrets.yml
+
+encrypt existing files
+ansible-vault encrypt --vault-password-file passwordfile abc.yml
+
+
+editing encrypted files
+
+ansible-vault edit --vault-password-file passwordfile abc.yml
+
+#check how to decrypt the content
+
+
+
+
+

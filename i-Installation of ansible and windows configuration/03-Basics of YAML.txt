@@ -1,0 +1,234 @@
+<#YAML
+
+#http://yaml-online-parser.appspot.com/
+#http://www.yamllint.com/
+#https://jsonformatter.org/yaml-validator
+
+
+Every YAML file should start with three dashes
+Comment start with #
+Every YAMl files should start with 
+---
+
+end with
+...
+
+
+#>
+
+#simple YAML
+
+
+
+---
+hosts: win1
+key1: this is first value
+key2: this is second value
+
+key: value
+...
+
+# for string we can use " , '    quotes are not required but in case of complexity we should use it.
+# to escape character we need to use /
+
+# Example 2 mutiple line string
+---
+
+key1: |
+ this is line 
+ across multiple 
+ lines spread.
+ ...
+ # Example 3 mutiple line string
+---
+
+key2: >
+ this is line 
+ across multiple 
+ lines spread.
+...
+
+  # Example 4 mutiple line string
+---
+
+key2: >-
+ this is line 
+ across multiple 
+ lines spread.
+ ...
+
+
+   # Example 5 mutiple line string
+---
+
+key3: 2
+ ...
+
+ #if you want to represent number as string add quotes
+
+ 
+# Example 6 mutiple line string
+
+---
+statement1:false
+statement2:False
+statement3:no
+statement4:No
+statement5: FALSE
+
+...
+same stands for True, true, TRUE , on , ON, On
+
+# to represent list
+
+---
+- listitem1
+- listitem2
+...
+
+#we can also use key value like below
+
+{key1: value1,key2: value2}
+
+
+#we can use list as below
+
+[listitem1,listitem2]
+
+
+#Check below
+---
+key1: value1
+- example list 
+...
+
+---
+{key1:value1}
+[listentry1]
+...
+
+
+#try below
+key1:
+ - list item1
+ - list item2
+
+key2:
+ - list item3
+ - list item4
+
+ # List of dictionary
+
+- key1:
+ - list item1
+ - list item2
+
+- key2:
+ - list item3
+ - list item4
+
+# check out the error is above
+
+
+check out little complex 
+
+dictionary1:
+ - child dictionary1
+  - subchild list1
+  - subchild list2
+ - child dictionary2
+  - subchild list3
+  - subchild list4
+
+class:
+ dinesh:
+  role: cosultant
+  company: CG
+ kundan:
+  role: consultant
+  company: CG
+
+Now check
+dictionary1:
+ - childdictionary1:
+   - subchild list1
+   - subchild list2
+ - childdictionary2:
+   - subchild list3
+   - subchild list4
+
+
+Create list of roles
+Web Servers
+1) WebServer
+2) Telnet
+3) SMTP
+4) DFS
+
+
+
+
+Servers
+A) WebServer
+1) WebServer
+2) Telnet
+3) SMTP
+4) DFS
+
+B) DBServer
+1) .net 3.5
+2) Telnet
+3) Cluster
+          
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Answers
+
+Our Web Server:
+ - WebServer
+ - Telnet
+ - SMTP
+ - DFS
+
+
+
+
+
+
+
+
+
+
+ Servers
+- WebServer:
+   WebServer
+   Telnet
+   SMTP
+   DFS
+
+- DBServer:
+  .net 3.5
+  Telnet
+  Cluster
+
+- Webserver:
+  Web: install
+  telnet: remove
+  partition:
+    - C
+    - D
+

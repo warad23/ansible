@@ -1,0 +1,11 @@
+---
+-
+  hosts: win1
+  tasks:
+    - name: test Jinja if
+      debug:
+        msg: >
+            This is test if ansible
+             {% if ansible_hostname == "ANSIBLEWINSRV" -%}
+                   This is ansiblewinserver
+             {% endif %}

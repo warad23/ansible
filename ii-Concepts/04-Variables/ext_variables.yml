@@ -1,0 +1,8 @@
+---
+
+myname: Dinesh Patil
+
+servicesneedstodisable:
+   [Bits, Dhcp, Dnscache]
+
+...

@@ -1,0 +1,813 @@
+2019-01-18 07:52:58,223 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 07:52:58,584 p=11901 u=dinesh |  ansiwindows | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "ssl: HTTPSConnectionPool(host='ansiwindows', port=5986): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f1889e35d90>: Failed to establish a new connection: [Errno -2] Name or service not known',))", 
+    "unreachable": true
+}
+2019-01-18 07:53:42,021 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 07:53:42,377 p=11912 u=dinesh |  ansiwindows | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "ssl: HTTPSConnectionPool(host='ansiwindows', port=5986): Max retries exceeded with url: /wsman (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fe74a66dd90>: Failed to establish a new connection: [Errno -2] Name or service not known',))", 
+    "unreachable": true
+}
+2019-01-18 08:20:49,673 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 08:20:49,754 p=11932 u=dinesh |  ansiwindows | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "ssl: HTTPSConnectionPool(host='ansiwindows', port=5986): Max retries exceeded with url: /wsman (Caused by SSLError(SSLError(1, u'[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590)'),))", 
+    "unreachable": true
+}
+2019-01-18 08:24:27,748 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 08:24:27,785 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 08:24:27,792 p=11949 u=dinesh |  ansiwindows | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "ssl: the specified credentials were rejected by the server", 
+    "unreachable": true
+}
+2019-01-18 08:26:30,177 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 08:26:30,194 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 08:26:30,199 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 08:26:30,211 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 08:26:30,379 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 08:26:30,396 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 08:26:31,144 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 08:26:31,913 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 08:26:32,598 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2031
+2019-01-18 08:26:32,606 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 08:26:32,613 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 08:26:32,620 p=11962 u=dinesh |  ansiwindows | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-01-18 08:38:49,740 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 08:38:49,754 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 08:38:49,758 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 08:38:49,769 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 08:38:49,901 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 08:38:49,919 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 08:38:50,576 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 08:38:51,307 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 08:38:51,702 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2031
+2019-01-18 08:38:51,712 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 08:38:51,724 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 08:38:51,755 p=11976 u=dinesh |  ansiwindows | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-01-18 08:48:30,690 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 08:48:30,733 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 08:48:30,738 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 08:48:30,753 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 08:48:30,918 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 08:48:30,943 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 08:48:31,744 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 08:48:32,568 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 08:48:33,330 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2031
+2019-01-18 08:48:33,340 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 08:48:33,353 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 08:48:33,401 p=11996 u=dinesh |  ansiwindows | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-01-18 08:48:48,559 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 08:48:48,586 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 08:48:48,590 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 08:48:48,603 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 08:48:48,612 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 08:48:48,621 p=12008 u=dinesh |  ansiwindows | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "ntlm: the specified credentials were rejected by the server", 
+    "unreachable": true
+}
+2019-01-18 08:49:54,459 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 08:49:54,476 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 08:49:54,482 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 08:49:54,503 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 08:49:54,643 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 08:49:54,660 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 08:49:55,757 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 08:49:56,608 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 08:49:57,721 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2031
+2019-01-18 08:49:57,735 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 08:49:57,755 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 08:49:57,800 p=12020 u=dinesh |  ansiwindows | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-01-18 09:00:19,937 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 09:00:19,966 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 09:00:19,969 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 09:00:19,984 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 09:00:20,172 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 09:00:20,190 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 09:00:21,138 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 09:00:21,945 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 09:00:22,615 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2031
+2019-01-18 09:00:22,625 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 09:00:22,634 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 09:00:22,669 p=12033 u=dinesh |  ansiwindows | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-01-18 09:09:36,493 p=12048 u=dinesh |   [WARNING]: Could not match supplied host pattern, ignoring: mywin2
+
+2019-01-18 09:09:36,493 p=12048 u=dinesh |   [WARNING]: No hosts matched, nothing to do
+
+2019-01-18 09:09:48,023 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 09:09:48,051 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 09:09:48,057 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 09:09:48,077 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 09:09:48,288 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 09:09:48,317 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 09:09:49,454 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 09:09:50,367 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 09:09:51,474 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2031
+2019-01-18 09:09:51,490 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 09:09:51,505 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 09:09:51,548 p=12055 u=dinesh |  ansiwindows | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-01-18 09:44:51,670 p=12259 u=dinesh |  PLAY [mywin1] **********************************************************************************************************************************************************
+2019-01-18 09:44:51,693 p=12259 u=dinesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-18 09:44:51,827 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 09:44:51,847 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 09:44:51,852 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 09:44:51,868 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 09:44:52,055 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 09:44:52,081 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 09:44:52,972 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 09:44:53,821 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 09:45:00,828 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 7503
+2019-01-18 09:45:00,838 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 09:45:00,861 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 09:45:00,887 p=12259 u=dinesh |  ok: [ansiwindows]
+2019-01-18 09:45:00,916 p=12259 u=dinesh |  TASK [copy the files from this to remote] ******************************************************************************************************************************
+2019-01-18 09:45:01,041 p=12259 u=dinesh |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2019-01-18 09:45:01,043 p=12259 u=dinesh |  fatal: [ansiwindows]: FAILED! => {"changed": false, "dest": "C:/temp.txt", "msg": "Could not find or access 'test.txt'\nSearched in:\n\t/home/dinesh/ansiclass/Concepts/playbook/files/test.txt\n\t/home/dinesh/ansiclass/Concepts/playbook/test.txt\n\t/home/dinesh/ansiclass/Concepts/playbook/files/test.txt\n\t/home/dinesh/ansiclass/Concepts/playbook/test.txt on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option", "src": "test.txt"}
+2019-01-18 09:45:01,047 p=12259 u=dinesh |  	to retry, use: --limit @/home/dinesh/ansiclass/Concepts/playbook/01tasks.retry
+
+2019-01-18 09:45:01,048 p=12259 u=dinesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-18 09:45:01,049 p=12259 u=dinesh |  ansiwindows                : ok=1    changed=0    unreachable=0    failed=1   
+2019-01-18 09:47:04,532 p=12321 u=dinesh |  PLAY [mywin1] **********************************************************************************************************************************************************
+2019-01-18 09:47:04,566 p=12321 u=dinesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-18 09:47:04,730 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 09:47:04,754 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 09:47:04,758 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 09:47:04,775 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 09:47:04,958 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 09:47:04,981 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 09:47:05,897 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 09:47:06,720 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 09:47:13,423 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 7503
+2019-01-18 09:47:13,433 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 09:47:13,456 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 09:47:13,481 p=12321 u=dinesh |  ok: [ansiwindows]
+2019-01-18 09:47:13,509 p=12321 u=dinesh |  TASK [copy the files from this to remote] ******************************************************************************************************************************
+2019-01-18 09:47:13,653 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 09:47:13,672 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 09:47:13,678 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 09:47:13,693 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 09:47:13,867 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 09:47:13,891 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 09:47:14,918 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 09:47:15,820 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 09:47:16,978 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2243
+2019-01-18 09:47:16,989 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 09:47:17,014 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 09:47:18,534 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2503
+2019-01-18 09:47:18,546 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 09:47:18,566 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 09:47:18,577 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 09:47:19,523 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2159
+2019-01-18 09:47:19,534 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 09:47:19,562 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 09:47:20,477 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 09:47:21,335 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 09:47:22,869 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2011
+2019-01-18 09:47:22,880 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 09:47:22,903 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 09:47:24,233 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1911
+2019-01-18 09:47:24,244 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 09:47:24,255 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 09:47:24,279 p=12321 u=dinesh |  changed: [ansiwindows]
+2019-01-18 09:47:24,283 p=12321 u=dinesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-18 09:47:24,284 p=12321 u=dinesh |  ansiwindows                : ok=2    changed=1    unreachable=0    failed=0   
+2019-01-18 09:51:44,143 p=12341 u=dinesh |  ERROR! Incorrect options passed
+2019-01-18 09:52:24,216 p=12355 u=dinesh |  ERROR! Incorrect options passed
+2019-01-18 09:54:52,322 p=12405 u=dinesh |  PLAY [mywin1] **********************************************************************************************************************************************************
+2019-01-18 09:54:52,346 p=12405 u=dinesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-18 09:54:52,486 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 09:54:52,508 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 09:54:52,513 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 09:54:52,529 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 09:54:52,743 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 09:54:52,765 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 09:54:53,712 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 09:54:54,537 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 09:55:01,330 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 7503
+2019-01-18 09:55:01,346 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 09:55:01,370 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 09:55:01,402 p=12405 u=dinesh |  ok: [ansiwindows]
+2019-01-18 09:55:01,441 p=12405 u=dinesh |  TASK [copy the files from this to remote] ******************************************************************************************************************************
+2019-01-18 09:55:01,598 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 09:55:01,618 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 09:55:01,627 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 09:55:01,644 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 09:55:01,852 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 09:55:01,878 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 09:55:02,833 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 09:55:03,656 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 09:55:05,026 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2067
+2019-01-18 09:55:05,035 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 09:55:05,046 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 09:55:05,063 p=12405 u=dinesh |  ok: [ansiwindows]
+2019-01-18 09:55:05,075 p=12405 u=dinesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-18 09:55:05,076 p=12405 u=dinesh |  ansiwindows                : ok=2    changed=0    unreachable=0    failed=0   
+2019-01-18 09:59:45,314 p=12437 u=dinesh |  ERROR! Syntax Error while loading YAML.
+  found unacceptable key (unhashable type: 'AnsibleMapping')
+
+The error appears to have been in '/home/dinesh/ansiclass/Concepts/playbook/02vars.yml': line 14, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      win_copy:
+        src: {{sourcefile}}
+              ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2019-01-18 10:00:53,916 p=12442 u=dinesh |  PLAY [mywin1] **********************************************************************************************************************************************************
+2019-01-18 10:00:53,943 p=12442 u=dinesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-18 10:00:54,132 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 10:00:54,428 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:00:54,433 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 10:00:54,454 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:00:54,661 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 10:00:54,691 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:00:55,739 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 10:00:56,710 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 10:01:04,940 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 7503
+2019-01-18 10:01:04,954 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:01:04,998 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 10:01:05,029 p=12442 u=dinesh |  ok: [ansiwindows]
+2019-01-18 10:01:05,073 p=12442 u=dinesh |  TASK [copy the files from this to remote] ******************************************************************************************************************************
+2019-01-18 10:01:05,258 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 10:01:05,299 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:01:05,306 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 10:01:05,336 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:01:05,657 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 10:01:05,687 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:01:06,920 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 10:01:07,825 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 10:01:09,442 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2247
+2019-01-18 10:01:09,456 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:01:09,500 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:01:11,584 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2503
+2019-01-18 10:01:11,600 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:01:11,629 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:01:11,648 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 10:01:12,741 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2159
+2019-01-18 10:01:12,757 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:01:12,842 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:01:13,883 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 10:01:14,838 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 10:01:16,166 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2011
+2019-01-18 10:01:16,177 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:01:16,212 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:01:17,949 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1911
+2019-01-18 10:01:17,960 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:01:17,972 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 10:01:18,001 p=12442 u=dinesh |  changed: [ansiwindows]
+2019-01-18 10:01:18,020 p=12442 u=dinesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-18 10:01:18,020 p=12442 u=dinesh |  ansiwindows                : ok=2    changed=1    unreachable=0    failed=0   
+2019-01-18 10:04:10,870 p=12468 u=dinesh |  PLAY [mywin1] **********************************************************************************************************************************************************
+2019-01-18 10:04:10,900 p=12468 u=dinesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-18 10:04:11,073 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 10:04:11,144 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:04:11,150 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 10:04:11,173 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:04:11,407 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 10:04:11,437 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:04:12,535 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 10:04:13,397 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 10:04:21,540 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 7503
+2019-01-18 10:04:21,554 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:04:21,579 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 10:04:21,620 p=12468 u=dinesh |  ok: [ansiwindows]
+2019-01-18 10:04:21,651 p=12468 u=dinesh |  TASK [copy the files from this to remote] ******************************************************************************************************************************
+2019-01-18 10:04:21,852 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 10:04:21,874 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:04:21,879 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 10:04:21,895 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:04:22,224 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 10:04:22,261 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:04:23,438 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 10:04:24,379 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 10:04:26,022 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2067
+2019-01-18 10:04:26,034 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:04:26,055 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 10:04:26,125 p=12468 u=dinesh |  ok: [ansiwindows]
+2019-01-18 10:04:26,140 p=12468 u=dinesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-18 10:04:26,140 p=12468 u=dinesh |  ansiwindows                : ok=2    changed=0    unreachable=0    failed=0   
+2019-01-18 10:05:08,813 p=12481 u=dinesh |  PLAY [mywin1] **********************************************************************************************************************************************************
+2019-01-18 10:05:08,853 p=12481 u=dinesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-18 10:05:09,028 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 10:05:09,052 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:05:09,058 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 10:05:09,075 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:05:09,304 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 10:05:09,336 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:05:10,472 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 10:05:11,360 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 10:05:18,807 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 7499
+2019-01-18 10:05:18,819 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:05:18,851 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 10:05:18,888 p=12481 u=dinesh |  ok: [ansiwindows]
+2019-01-18 10:05:18,914 p=12481 u=dinesh |  TASK [copy the files from this to remote] ******************************************************************************************************************************
+2019-01-18 10:05:19,104 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 10:05:19,130 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:05:19,137 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 10:05:19,157 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:05:19,369 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 10:05:19,401 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:05:20,522 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 10:05:21,491 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 10:05:23,268 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2251
+2019-01-18 10:05:23,280 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:05:23,310 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:05:25,378 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2503
+2019-01-18 10:05:25,391 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:05:25,424 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:05:25,460 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 10:05:26,742 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2159
+2019-01-18 10:05:26,758 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:05:26,793 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:05:28,002 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 10:05:28,902 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 10:05:29,982 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 2011
+2019-01-18 10:05:29,993 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:05:30,070 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:05:31,383 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1911
+2019-01-18 10:05:31,394 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:05:31,404 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 10:05:31,444 p=12481 u=dinesh |  changed: [ansiwindows]
+2019-01-18 10:05:31,455 p=12481 u=dinesh |  RUNNING HANDLER [my new handler] ***************************************************************************************************************************************
+2019-01-18 10:05:31,599 p=12481 u=dinesh |  ok: [ansiwindows] => {
+    "msg": "my files copied"
+}
+2019-01-18 10:05:31,603 p=12481 u=dinesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-18 10:05:31,604 p=12481 u=dinesh |  ansiwindows                : ok=3    changed=1    unreachable=0    failed=0   
+2019-01-18 10:07:04,070 p=12496 u=dinesh |  ansiwindows | FAILED! => {
+    "msg": "The module win_fact was not found in configured module paths. Additionally, core modules are missing. If this is a checkout, run 'git pull --rebase' to correct this problem."
+}
+2019-01-18 10:12:16,599 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 10:12:16,620 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:12:16,625 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 10:12:16,641 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:12:16,834 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 10:12:16,862 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:12:18,009 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 10:12:18,850 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 10:12:26,500 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 7503
+2019-01-18 10:12:26,512 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:12:26,547 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 10:12:26,593 p=12506 u=dinesh |  ansiwindows | SUCCESS => {
+    "ansible_facts": {
+        "ansible_architecture": "64-bit", 
+        "ansible_bios_date": "10/27/2017", 
+        "ansible_bios_version": "VMW71.00V.6997262.B64.1710270607", 
+        "ansible_date_time": {
+            "date": "2019-01-18", 
+            "day": "18", 
+            "epoch": "1547854940.41202", 
+            "hour": "23", 
+            "iso8601": "2019-01-18T18:12:20Z", 
+            "iso8601_basic": "20190118T234220397082", 
+            "iso8601_basic_short": "20190118T234220", 
+            "iso8601_micro": "2019-01-18T18:12:20.397082Z", 
+            "minute": "42", 
+            "month": "01", 
+            "second": "20", 
+            "time": "23:42:20", 
+            "tz": "India Standard Time", 
+            "tz_offset": "+05:30", 
+            "weekday": "Friday", 
+            "weekday_number": "5", 
+            "weeknumber": "2", 
+            "year": "2019"
+        }, 
+        "ansible_distribution": "Microsoft Windows Server 2016 Datacenter", 
+        "ansible_distribution_major_version": "10", 
+        "ansible_distribution_version": "10.0.14393.0", 
+        "ansible_domain": "", 
+        "ansible_env": {
+            "ALLUSERSPROFILE": "C:\\ProgramData", 
+            "APPDATA": "C:\\Users\\Administrator\\AppData\\Roaming", 
+            "COMPUTERNAME": "ANSIWINDOWS", 
+            "ComSpec": "C:\\Windows\\system32\\cmd.exe", 
+            "CommonProgramFiles": "C:\\Program Files\\Common Files", 
+            "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files", 
+            "CommonProgramW6432": "C:\\Program Files\\Common Files", 
+            "HOMEDRIVE": "C:", 
+            "HOMEPATH": "\\Users\\Administrator", 
+            "LOCALAPPDATA": "C:\\Users\\Administrator\\AppData\\Local", 
+            "LOGONSERVER": "\\\\ANSIWINDOWS", 
+            "NUMBER_OF_PROCESSORS": "4", 
+            "OS": "Windows_NT", 
+            "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL", 
+            "PROCESSOR_ARCHITECTURE": "AMD64", 
+            "PROCESSOR_IDENTIFIER": "AMD64 Family 21 Model 16 Stepping 1, AuthenticAMD", 
+            "PROCESSOR_LEVEL": "21", 
+            "PROCESSOR_REVISION": "1001", 
+            "PROMPT": "$P$G", 
+            "PSExecutionPolicyPreference": "Unrestricted", 
+            "PSModulePath": "C:\\Users\\Administrator\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules", 
+            "PUBLIC": "C:\\Users\\Public", 
+            "Path": "C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps", 
+            "ProgramData": "C:\\ProgramData", 
+            "ProgramFiles": "C:\\Program Files", 
+            "ProgramFiles(x86)": "C:\\Program Files (x86)", 
+            "ProgramW6432": "C:\\Program Files", 
+            "SystemDrive": "C:", 
+            "SystemRoot": "C:\\Windows", 
+            "TEMP": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp", 
+            "TMP": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp", 
+            "USERDOMAIN": "ANSIWINDOWS", 
+            "USERDOMAIN_ROAMINGPROFILE": "ANSIWINDOWS", 
+            "USERNAME": "Administrator", 
+            "USERPROFILE": "C:\\Users\\Administrator", 
+            "windir": "C:\\Windows"
+        }, 
+        "ansible_fqdn": "ansiwindows.", 
+        "ansible_hostname": "ANSIWINDOWS", 
+        "ansible_interfaces": [
+            {
+                "connection_name": "Ethernet0", 
+                "default_gateway": "192.168.2.1", 
+                "dns_domain": "Belkin", 
+                "interface_index": 11, 
+                "interface_name": "Intel(R) 82574L Gigabit Network Connection", 
+                "macaddress": "00:0C:29:6D:50:E0"
+            }
+        ], 
+        "ansible_ip_addresses": [
+            "192.168.2.109"
+        ], 
+        "ansible_kernel": "10.0.14393.0", 
+        "ansible_lastboot": "2019-01-18 21:27:05Z", 
+        "ansible_machine_id": "S-1-5-21-2401863680-3682491596-779454607", 
+        "ansible_memtotal_mb": 8191, 
+        "ansible_nodename": "ansiwindows.", 
+        "ansible_os_family": "Windows", 
+        "ansible_os_name": "Microsoft Windows Server 2016 Datacenter", 
+        "ansible_os_product_type": "server", 
+        "ansible_owner_contact": "", 
+        "ansible_owner_name": "Windows User", 
+        "ansible_powershell_version": 5, 
+        "ansible_processor": [
+            "AuthenticAMD", 
+            "AMD A8-4500M APU with Radeon(tm) HD Graphics   "
+        ], 
+        "ansible_processor_cores": 2, 
+        "ansible_processor_count": 2, 
+        "ansible_processor_threads_per_core": 0.5, 
+        "ansible_processor_vcpus": 1, 
+        "ansible_product_name": "VMware7,1", 
+        "ansible_product_serial": "VMware-56 4d 7e 92 63 65 09 83-74 7f 8a e1 90 6d 50 e0", 
+        "ansible_reboot_pending": true, 
+        "ansible_swaptotal_mb": 0, 
+        "ansible_system": "Win32NT", 
+        "ansible_system_description": "", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_uptime_seconds": 8120, 
+        "ansible_user_dir": "C:\\Users\\Administrator", 
+        "ansible_user_gecos": "", 
+        "ansible_user_id": "Administrator", 
+        "ansible_user_sid": "S-1-5-21-2401863680-3682491596-779454607-500", 
+        "ansible_win_rm_certificate_expires": "2020-01-18 22:17:01", 
+        "ansible_windows_domain": "WORKGROUP", 
+        "ansible_windows_domain_member": false, 
+        "ansible_windows_domain_role": "Stand-alone server", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2019-01-18 10:14:43,734 p=12532 u=dinesh |  ERROR! Incorrect options passed
+2019-01-18 10:16:03,773 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 10:16:03,794 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:16:03,800 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 10:16:03,831 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:16:04,009 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 10:16:04,032 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:16:04,992 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 10:16:05,842 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 10:16:13,379 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 7503
+2019-01-18 10:16:13,389 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:16:13,411 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 10:16:13,458 p=12570 u=dinesh |  ansiwindows | SUCCESS => {
+    "ansible_facts": {
+        "ansible_architecture": "64-bit", 
+        "ansible_bios_date": "10/27/2017", 
+        "ansible_bios_version": "VMW71.00V.6997262.B64.1710270607", 
+        "ansible_date_time": {
+            "date": "2019-01-18", 
+            "day": "18", 
+            "epoch": "1547855167.32926", 
+            "hour": "23", 
+            "iso8601": "2019-01-18T18:16:07Z", 
+            "iso8601_basic": "20190118T234607313249", 
+            "iso8601_basic_short": "20190118T234607", 
+            "iso8601_micro": "2019-01-18T18:16:07.313249Z", 
+            "minute": "46", 
+            "month": "01", 
+            "second": "07", 
+            "time": "23:46:07", 
+            "tz": "India Standard Time", 
+            "tz_offset": "+05:30", 
+            "weekday": "Friday", 
+            "weekday_number": "5", 
+            "weeknumber": "2", 
+            "year": "2019"
+        }, 
+        "ansible_distribution": "Microsoft Windows Server 2016 Datacenter", 
+        "ansible_distribution_major_version": "10", 
+        "ansible_distribution_version": "10.0.14393.0", 
+        "ansible_domain": "", 
+        "ansible_env": {
+            "ALLUSERSPROFILE": "C:\\ProgramData", 
+            "APPDATA": "C:\\Users\\Administrator\\AppData\\Roaming", 
+            "COMPUTERNAME": "ANSIWINDOWS", 
+            "ComSpec": "C:\\Windows\\system32\\cmd.exe", 
+            "CommonProgramFiles": "C:\\Program Files\\Common Files", 
+            "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files", 
+            "CommonProgramW6432": "C:\\Program Files\\Common Files", 
+            "HOMEDRIVE": "C:", 
+            "HOMEPATH": "\\Users\\Administrator", 
+            "LOCALAPPDATA": "C:\\Users\\Administrator\\AppData\\Local", 
+            "LOGONSERVER": "\\\\ANSIWINDOWS", 
+            "NUMBER_OF_PROCESSORS": "4", 
+            "OS": "Windows_NT", 
+            "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL", 
+            "PROCESSOR_ARCHITECTURE": "AMD64", 
+            "PROCESSOR_IDENTIFIER": "AMD64 Family 21 Model 16 Stepping 1, AuthenticAMD", 
+            "PROCESSOR_LEVEL": "21", 
+            "PROCESSOR_REVISION": "1001", 
+            "PROMPT": "$P$G", 
+            "PSExecutionPolicyPreference": "Unrestricted", 
+            "PSModulePath": "C:\\Users\\Administrator\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules", 
+            "PUBLIC": "C:\\Users\\Public", 
+            "Path": "C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps", 
+            "ProgramData": "C:\\ProgramData", 
+            "ProgramFiles": "C:\\Program Files", 
+            "ProgramFiles(x86)": "C:\\Program Files (x86)", 
+            "ProgramW6432": "C:\\Program Files", 
+            "SystemDrive": "C:", 
+            "SystemRoot": "C:\\Windows", 
+            "TEMP": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp", 
+            "TMP": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp", 
+            "USERDOMAIN": "ANSIWINDOWS", 
+            "USERDOMAIN_ROAMINGPROFILE": "ANSIWINDOWS", 
+            "USERNAME": "Administrator", 
+            "USERPROFILE": "C:\\Users\\Administrator", 
+            "windir": "C:\\Windows"
+        }, 
+        "ansible_fqdn": "ansiwindows.", 
+        "ansible_hostname": "ANSIWINDOWS", 
+        "ansible_interfaces": [
+            {
+                "connection_name": "Ethernet0", 
+                "default_gateway": "192.168.2.1", 
+                "dns_domain": "Belkin", 
+                "interface_index": 11, 
+                "interface_name": "Intel(R) 82574L Gigabit Network Connection", 
+                "macaddress": "00:0C:29:6D:50:E0"
+            }
+        ], 
+        "ansible_ip_addresses": [
+            "192.168.2.109"
+        ], 
+        "ansible_kernel": "10.0.14393.0", 
+        "ansible_lastboot": "2019-01-18 21:27:05Z", 
+        "ansible_machine_id": "S-1-5-21-2401863680-3682491596-779454607", 
+        "ansible_memtotal_mb": 8191, 
+        "ansible_nodename": "ansiwindows.", 
+        "ansible_os_family": "Windows", 
+        "ansible_os_name": "Microsoft Windows Server 2016 Datacenter", 
+        "ansible_os_product_type": "server", 
+        "ansible_owner_contact": "", 
+        "ansible_owner_name": "Windows User", 
+        "ansible_powershell_version": 5, 
+        "ansible_processor": [
+            "AuthenticAMD", 
+            "AMD A8-4500M APU with Radeon(tm) HD Graphics   "
+        ], 
+        "ansible_processor_cores": 2, 
+        "ansible_processor_count": 2, 
+        "ansible_processor_threads_per_core": 0.5, 
+        "ansible_processor_vcpus": 1, 
+        "ansible_product_name": "VMware7,1", 
+        "ansible_product_serial": "VMware-56 4d 7e 92 63 65 09 83-74 7f 8a e1 90 6d 50 e0", 
+        "ansible_reboot_pending": true, 
+        "ansible_swaptotal_mb": 0, 
+        "ansible_system": "Win32NT", 
+        "ansible_system_description": "", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_uptime_seconds": 8347, 
+        "ansible_user_dir": "C:\\Users\\Administrator", 
+        "ansible_user_gecos": "", 
+        "ansible_user_id": "Administrator", 
+        "ansible_user_sid": "S-1-5-21-2401863680-3682491596-779454607-500", 
+        "ansible_win_rm_certificate_expires": "2020-01-18 22:17:01", 
+        "ansible_windows_domain": "WORKGROUP", 
+        "ansible_windows_domain_member": false, 
+        "ansible_windows_domain_role": "Stand-alone server", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2019-01-18 10:16:23,130 p=12580 u=dinesh |  ERROR! Extraneous options or arguments
+2019-01-18 10:16:58,361 p=12583 u=dinesh |  ERROR! Extraneous options or arguments
+2019-01-18 10:17:19,052 p=12589 u=dinesh |  ERROR! this task 'setup' has extra params, which is only allowed in the following modules: shell, win_shell, include_vars, add_host, raw, include_role, meta, set_fact, include, import_tasks, script, import_role, include_tasks, group_by, command, win_command
+2019-01-18 10:17:25,293 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 10:17:25,311 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:17:25,317 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 10:17:25,333 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:17:25,519 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 10:17:25,542 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:17:26,488 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 10:17:27,314 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 10:17:34,909 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 7507
+2019-01-18 10:17:34,921 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:17:34,943 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 10:17:34,980 p=12594 u=dinesh |  ansiwindows | SUCCESS => {
+    "ansible_facts": {
+        "ansible_architecture": "64-bit", 
+        "ansible_bios_date": "10/27/2017", 
+        "ansible_bios_version": "VMW71.00V.6997262.B64.1710270607", 
+        "ansible_date_time": {
+            "date": "2019-01-18", 
+            "day": "18", 
+            "epoch": "1547855248.53398", 
+            "hour": "23", 
+            "iso8601": "2019-01-18T18:17:28Z", 
+            "iso8601_basic": "20190118T234728517533", 
+            "iso8601_basic_short": "20190118T234728", 
+            "iso8601_micro": "2019-01-18T18:17:28.517533Z", 
+            "minute": "47", 
+            "month": "01", 
+            "second": "28", 
+            "time": "23:47:28", 
+            "tz": "India Standard Time", 
+            "tz_offset": "+05:30", 
+            "weekday": "Friday", 
+            "weekday_number": "5", 
+            "weeknumber": "2", 
+            "year": "2019"
+        }, 
+        "ansible_distribution": "Microsoft Windows Server 2016 Datacenter", 
+        "ansible_distribution_major_version": "10", 
+        "ansible_distribution_version": "10.0.14393.0", 
+        "ansible_domain": "", 
+        "ansible_env": {
+            "ALLUSERSPROFILE": "C:\\ProgramData", 
+            "APPDATA": "C:\\Users\\Administrator\\AppData\\Roaming", 
+            "COMPUTERNAME": "ANSIWINDOWS", 
+            "ComSpec": "C:\\Windows\\system32\\cmd.exe", 
+            "CommonProgramFiles": "C:\\Program Files\\Common Files", 
+            "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files", 
+            "CommonProgramW6432": "C:\\Program Files\\Common Files", 
+            "HOMEDRIVE": "C:", 
+            "HOMEPATH": "\\Users\\Administrator", 
+            "LOCALAPPDATA": "C:\\Users\\Administrator\\AppData\\Local", 
+            "LOGONSERVER": "\\\\ANSIWINDOWS", 
+            "NUMBER_OF_PROCESSORS": "4", 
+            "OS": "Windows_NT", 
+            "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL", 
+            "PROCESSOR_ARCHITECTURE": "AMD64", 
+            "PROCESSOR_IDENTIFIER": "AMD64 Family 21 Model 16 Stepping 1, AuthenticAMD", 
+            "PROCESSOR_LEVEL": "21", 
+            "PROCESSOR_REVISION": "1001", 
+            "PROMPT": "$P$G", 
+            "PSExecutionPolicyPreference": "Unrestricted", 
+            "PSModulePath": "C:\\Users\\Administrator\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules", 
+            "PUBLIC": "C:\\Users\\Public", 
+            "Path": "C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps", 
+            "ProgramData": "C:\\ProgramData", 
+            "ProgramFiles": "C:\\Program Files", 
+            "ProgramFiles(x86)": "C:\\Program Files (x86)", 
+            "ProgramW6432": "C:\\Program Files", 
+            "SystemDrive": "C:", 
+            "SystemRoot": "C:\\Windows", 
+            "TEMP": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp", 
+            "TMP": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp", 
+            "USERDOMAIN": "ANSIWINDOWS", 
+            "USERDOMAIN_ROAMINGPROFILE": "ANSIWINDOWS", 
+            "USERNAME": "Administrator", 
+            "USERPROFILE": "C:\\Users\\Administrator", 
+            "windir": "C:\\Windows"
+        }, 
+        "ansible_fqdn": "ansiwindows.", 
+        "ansible_hostname": "ANSIWINDOWS", 
+        "ansible_interfaces": [
+            {
+                "connection_name": "Ethernet0", 
+                "default_gateway": "192.168.2.1", 
+                "dns_domain": "Belkin", 
+                "interface_index": 11, 
+                "interface_name": "Intel(R) 82574L Gigabit Network Connection", 
+                "macaddress": "00:0C:29:6D:50:E0"
+            }
+        ], 
+        "ansible_ip_addresses": [
+            "192.168.2.109"
+        ], 
+        "ansible_kernel": "10.0.14393.0", 
+        "ansible_lastboot": "2019-01-18 21:27:05Z", 
+        "ansible_machine_id": "S-1-5-21-2401863680-3682491596-779454607", 
+        "ansible_memtotal_mb": 8191, 
+        "ansible_nodename": "ansiwindows.", 
+        "ansible_os_family": "Windows", 
+        "ansible_os_name": "Microsoft Windows Server 2016 Datacenter", 
+        "ansible_os_product_type": "server", 
+        "ansible_owner_contact": "", 
+        "ansible_owner_name": "Windows User", 
+        "ansible_powershell_version": 5, 
+        "ansible_processor": [
+            "AuthenticAMD", 
+            "AMD A8-4500M APU with Radeon(tm) HD Graphics   "
+        ], 
+        "ansible_processor_cores": 2, 
+        "ansible_processor_count": 2, 
+        "ansible_processor_threads_per_core": 0.5, 
+        "ansible_processor_vcpus": 1, 
+        "ansible_product_name": "VMware7,1", 
+        "ansible_product_serial": "VMware-56 4d 7e 92 63 65 09 83-74 7f 8a e1 90 6d 50 e0", 
+        "ansible_reboot_pending": true, 
+        "ansible_swaptotal_mb": 0, 
+        "ansible_system": "Win32NT", 
+        "ansible_system_description": "", 
+        "ansible_system_vendor": "VMware, Inc.", 
+        "ansible_uptime_seconds": 8429, 
+        "ansible_user_dir": "C:\\Users\\Administrator", 
+        "ansible_user_gecos": "", 
+        "ansible_user_id": "Administrator", 
+        "ansible_user_sid": "S-1-5-21-2401863680-3682491596-779454607-500", 
+        "ansible_win_rm_certificate_expires": "2020-01-18 22:17:01", 
+        "ansible_windows_domain": "WORKGROUP", 
+        "ansible_windows_domain_member": false, 
+        "ansible_windows_domain_role": "Stand-alone server", 
+        "gather_subset": [
+            "network"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
+2019-01-18 10:24:23,027 p=12619 u=dinesh |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to have been in '/home/dinesh/ansiclass/Concepts/playbook/04gatherfacts.yml': line 11, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  # Task: the list of tasks that will be executed within the playbook
+    tasks:
+    ^ here
+
+2019-01-18 10:24:46,958 p=12624 u=dinesh |  PLAY [mywin1] **********************************************************************************************************************************************************
+2019-01-18 10:24:46,980 p=12624 u=dinesh |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-01-18 10:24:47,123 urllib3.connectionpool Starting new HTTPS connection (1): ansiwindows:5986
+2019-01-18 10:24:47,144 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:24:47,149 urllib3.connectionpool Resetting dropped connection: ansiwindows
+2019-01-18 10:24:47,164 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 401 0
+2019-01-18 10:24:47,340 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 1641
+2019-01-18 10:24:47,361 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 847
+2019-01-18 10:24:48,264 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 753
+2019-01-18 10:24:49,122 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 998
+2019-01-18 10:24:56,255 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 7499
+2019-01-18 10:24:56,265 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 757
+2019-01-18 10:24:56,288 urllib3.connectionpool https://ansiwindows:5986 "POST /wsman HTTP/1.1" 200 602
+2019-01-18 10:24:56,312 p=12624 u=dinesh |  ok: [ansiwindows]
+2019-01-18 10:24:56,338 p=12624 u=dinesh |  TASK [Test hostvars with an ansible fact and collect ansible_port, dot notation] ***************************************************************************************
+2019-01-18 10:24:56,408 p=12624 u=dinesh |  fatal: [ansiwindows]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: u\"hostvars['ANSIWINDOWS']\" is undefined\n\nThe error appears to have been in '/home/dinesh/ansiclass/Concepts/playbook/04gatherfacts.yml': line 12, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: Test hostvars with an ansible fact and collect ansible_port, dot notation\n      ^ here\n"}
+2019-01-18 10:24:56,412 p=12624 u=dinesh |  	to retry, use: --limit @/home/dinesh/ansiclass/Concepts/playbook/04gatherfacts.retry
+
+2019-01-18 10:24:56,413 p=12624 u=dinesh |  PLAY RECAP *************************************************************************************************************************************************************
+2019-01-18 10:24:56,414 p=12624 u=dinesh |  ansiwindows                : ok=1    changed=0    unreachable=0    failed=1   

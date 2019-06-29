@@ -1,0 +1,17 @@
+---
+-
+  hosts: all
+  gather_facts: true # this will make not to gather facts before running tasks
+
+  tasks: 
+    - name: get all services
+      win_shell: get-service | convertto-json
+      register: services
+    
+    - name: list the variable
+      debug:
+        msg: >
+             =-= my services =-= 
+             {{ services }}
+        
+...

@@ -1,0 +1,46 @@
+apt update
+
+make sure add universe at the end of line in sources.list
+
+apt update
+
+apt-add-repository --yes --update ppa:ansible/ansible
+
+apt install ansible -y
+
+install docker
+
+apt install docker.io
+
+apt install python-pip -y
+
+pip install docker
+
+
+apt install nodejs npm -y
+
+
+npm install npm --global 
+
+git clone https://github.com/ansible/awx.git
+
+
+cd awx/installer
+ansible-playbook -i inventory install.yml
+
+
+create user
+
+
+create a inventory
+
+create a host
+
+create credential
+
+setting up project
+
+create job template
+
+Launch  a job
+
